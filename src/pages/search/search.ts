@@ -8,6 +8,7 @@ import {ReviewersServiceProvider} from '../../providers/reviewers-service/review
 import {AuthenticationServiceProvider} from '../../providers/authentication-service/authentication-service';
 import {Observable} from 'rxjs/Observable';
 import {ReviewerInfoModalPage} from '../reviewer-info-modal/reviewer-info-modal';
+import {ProfilesServiceProvider} from '../../providers/profiles-service/profiles-service';
 
 /**
  * Generated class for the SearchPage page.
@@ -22,15 +23,23 @@ import {ReviewerInfoModalPage} from '../reviewer-info-modal/reviewer-info-modal'
   templateUrl: 'search.html',
 })
 export class SearchPage {
+  reviewer: any;
   reviewers$: FirebaseListObservable<any[]>;
   reviews$: Observable<any>;
 
 
   constructor(
+    private provilesService: ProfilesServiceProvider,
     private reviwersService: ReviewersServiceProvider,
     private reviewsService: ReviewsServiceProvider,
     public navCtrl: NavController,
     public navParams: NavParams) {
+
+
+    this.provilesService.getReviewer().subscribe(
+      reviewer => this.reviewer = reviewer
+    );
+
   }
 
 

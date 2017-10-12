@@ -8,6 +8,7 @@ import {FirebaseListObservable} from 'angularfire2/database';
 import {Observable} from 'rxjs/Observable';
 import {AuthenticationServiceProvider} from '../../providers/authentication-service/authentication-service';
 import {ReviewersServiceProvider} from '../../providers/reviewers-service/reviewers-service';
+import {ProfilesServiceProvider} from '../../providers/profiles-service/profiles-service';
 
 /**
  * Generated class for the BooksPage page.
@@ -21,9 +22,11 @@ import {ReviewersServiceProvider} from '../../providers/reviewers-service/review
   templateUrl: 'books.html',
 })
 export class BooksPage {
+  reviewer: any;
   reviewsO$: Observable<any[]>;
 
   constructor(
+    private profilesService: ProfilesServiceProvider,
     private authService: AuthenticationServiceProvider,
     private reviewsService: ReviewsServiceProvider,
     private modal:ModalController,
@@ -33,6 +36,9 @@ export class BooksPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad BooksPage');
+    this.profilesService.getReviewer().subscribe(
+      reviewer => this.reviewer = reviewer
+    );
 
     this.reviewsO$ = this.authService.reviewer$
       .switchMap( reviewer => this.reviewsService.getBooksReviews(reviewer.uid));
