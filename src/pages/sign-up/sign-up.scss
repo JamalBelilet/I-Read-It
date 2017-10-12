@@ -1,0 +1,119 @@
+
+
+page-sign-up {
+  * {
+    color: #CCCCCC;
+
+  }
+
+  ion-content {
+    background-image: url("../assets/img/old-books-436498_1920.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+  }
+
+  #brand {
+    position: absolute;
+    top: 2%;
+    left: 50% - 45/2;
+    width: 50%;
+  }
+
+  .scroll-content {
+    background: linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.45));
+  }
+
+
+  .sign-up {
+
+    position: absolute;
+    top: 17%;
+    right: 0;
+    width: 100%;
+
+    &.logo {
+      position: absolute;
+      top: 8%;
+      width: 6em;
+      left: 50%;
+      margin-left: -3em;
+    }
+
+    ion-list {
+      background-color: rgba(0,0,0,.35);
+      width: 100%;
+      padding: 0;
+      margin: 0;
+
+
+
+      ion-item {
+        background-color: transparent;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+
+        &:first-of-type ion-input {
+          margin: .1em 5% .1em 5%;
+        }
+
+        ion-input {
+          font-size: 1.1em;
+          background-color: rgba(0,0,0,.0);
+          margin: 1em 5% .1em 5%;
+          padding: .2em .6em 1em .5em;
+          border-radius: 2.25px;
+          width: 90%;
+          color: #eeeeee;
+
+
+        }
+
+      }
+    }
+  }
+
+  ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #CCCCCC;
+    font-size: .8em;
+    opacity: .65;
+    font-weight: lighter;
+  }
+
+
+  .btns {
+
+
+    ion-col {
+      display: flex;
+      justify-content: center;
+
+      button {
+        margin: 0;
+        border: 0;
+        &#signUpBtn {
+          font-size: 1.4em;
+        }
+      }
+    }
+
+
+  }
+
+
+  .logo {
+
+    width: 10em;
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    margin-left: -5em;
+    opacity: .8;
+
+    img {
+    }
+  }
+
+}

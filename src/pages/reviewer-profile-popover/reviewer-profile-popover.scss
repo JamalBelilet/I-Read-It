@@ -1,0 +1,121 @@
+page-reviewer-profile-popover {
+
+  h2 span {
+    font-size: 80%;
+    color: #4d4d4d;
+  }
+
+  ion-avatar  {
+    position: relative;
+    img {
+      width: 10em  !important;
+      height: 10em  !important;
+      margin: 0 auto;
+    }
+    .avatar-picker {
+
+      margin: -10em auto 0 auto;
+      width: 10em  !important;
+      height: 10em  !important;
+      border-radius: 50%;
+      color: whitesmoke;
+      z-index: 1;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+
+      button {
+        width: 100%;
+        height: 1.6em;
+        flex: 1 0 auto;
+        margin-top: 65%;
+        font-size: 1em;
+        background-color: rgba(0,0,0,.7);
+        text-transform: lowercase;
+        padding: 1.5em 1em 2.5em 1em;
+        font-weight: lighter;
+
+
+      }
+    }
+  }
+  ion-item {
+    display: flex;
+    justify-content: center;
+
+  }
+  ion-avatar  {
+    font-size: 15px;
+
+  }
+
+  .portion {
+    color: rgba(0,0,0,.7);
+    margin: .5em 0;
+
+
+
+    blockquote {
+      text-align: left;
+      color: #4d4d4d;
+      position: relative;
+      text-indent: 1em;
+      margin: 0 1em;
+
+      font-size: 90%;
+
+      &::before {
+        content: '\201c';
+        font-size: 2.2em;
+        font-family: "Bookman Old Style";
+        position: absolute;
+        left: -.5em;
+        top: -.2em;
+      }
+
+      & > span {
+        display: block;
+        text-align: right;
+        margin-right: 1.2em;
+        margin-bottom: 1.2em;
+        margin-top: .2em;
+
+        font-size: 70%;
+
+        span {
+          font-style: italic;
+        }
+      }
+
+    }
+
+    .actions {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-around;
+      margin: 0 3em;
+
+      div {
+        flex: 0 0 auto;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+
+        button {
+          height: 2em;
+          ion-icon {
+            line-height: 2em;
+            height: 2em;
+            color: #4d4d4d;
+          }
+        }
+        p {
+          line-height: 2em;
+          height: 2em;
+        }
+      }
+    }
+
+  }
+
+}

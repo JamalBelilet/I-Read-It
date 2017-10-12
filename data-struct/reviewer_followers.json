@@ -1,0 +1,24 @@
+{
+  "reviewerGKey1": [
+    {
+      "reviewGKey1": "",
+      "name": "Ribika Goes",
+      "username": "ribika_goes",
+      "mail": "ribika_goes@gmail.com"
+    },
+    {
+      "reviewGKey2": "",
+      "name": "Alex Nelson",
+      "username": "alex_nelson",
+      "mail": "alex_nelson@gmail.com"
+    }
+  ],
+  "reviewerGKey2": [
+    {
+      "reviewGKey3": "",
+      "name": "Endurance Greed",
+      "username": "endurance_greed",
+      "mail": "endurance_greed@gmail.com"
+    }
+  ]
+}

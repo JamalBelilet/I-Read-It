@@ -1,0 +1,72 @@
+page-my-reviews-modal {
+
+  h5 {
+    span {
+      color: rgba(0,0,0,.85);
+
+      &:after {
+        content: ' | ';
+      }
+      &:last-of-type:after{
+        content: none;
+      }
+    }
+  }
+
+  ion-icon.ios-bookmark-outline {
+    font-size: 2em;
+  }
+
+  .portion {
+    color: rgba(0,0,0,.7);
+    padding:0 auto;
+    margin: 1em 0;
+
+
+
+    blockquote {
+      text-align: left;
+      color: #4d4d4d;
+      position: relative;
+      text-indent: 1em;
+      margin: 0 1em;
+
+      &::before {
+        content: '\201c';
+        font-size: 2.7em;
+        font-family: "Bookman Old Style";
+        position: absolute;
+        left: -.5em;
+        top: -.2em;
+      }
+    }
+
+    .actions {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-around;
+      margin: 0 3em;
+
+      div {
+        flex: 0 0 auto;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+
+        button {
+          height: 2em;
+          ion-icon {
+            line-height: 2em;
+            height: 2em;
+            color: #4d4d4d;
+          }
+        }
+        p {
+          line-height: 2em;
+          height: 2em;
+        }
+      }
+    }
+
+  }
+}

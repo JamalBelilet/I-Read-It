@@ -1,0 +1,24 @@
+{
+  "reviewerGKey1": [
+    {
+      "reviewGKey1": "",
+      "name": "Trevor Hasen",
+      "username": "trevor_hacen",
+      "mail": "trevor_hacen@gmail.com"
+    },
+    {
+      "reviewGKey2": "",
+      "name": "Hinato Treasure",
+      "username": "hinato_treasure",
+      "mail": "hinato_treasure@gmail.com"
+    }
+  ],
+  "reviewerGKey2": [
+    {
+      "reviewGKey3": "",
+      "name": "Solat Strength",
+      "username": "solat_strength",
+      "mail": "solat_strength@gmail.com"
+    }
+  ]
+}

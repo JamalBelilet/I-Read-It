@@ -1,0 +1,72 @@
+<!--
+  Generated template for the FollowingModalPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+
+    <ion-grid no-padding>
+      <ion-row  justify-content-around>
+
+        <ion-col col-4>
+          <p class="f-foll">following<span class="f-counter"> ({{(following$ |async)?.length}})</span></p>
+        </ion-col>
+
+        <ion-col col-6>
+          <ion-searchbar
+          mode="ios"
+          animated="true">
+          </ion-searchbar>
+        </ion-col>
+
+        <ion-col col-1>
+          <button class="f-close" ion-button clear icon-only (click)="closeModal()">
+            <ion-icon name="close"></ion-icon>
+          </button>
+        </ion-col>
+
+      </ion-row>
+    </ion-grid>
+
+
+
+
+
+    <!--<ion-title start>following</ion-title>-->
+
+    <!--<ion-searchbar-->
+      <!--mode="ios"-->
+      <!--align-self-end-->
+      <!--col-auto-->
+      <!--animated="true">-->
+    <!--</ion-searchbar>-->
+
+    <!--<ion-buttons end>-->
+      <!--<button ion-button (click)="closeModal()">-->
+        <!--<ion-icon name="close"></ion-icon>-->
+      <!--</button>-->
+
+
+    <!--</ion-buttons>-->
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content >
+
+  <ion-item class="revierwers" *ngFor="let _following of following$ | async">
+    <ion-avatar item-start>
+      <img src="assets/img/{{_following.username}}.jpg" alt="{{_following.username}}">
+    </ion-avatar>
+    <h2>{{_following.name}}</h2>
+    <h5 class="user-id">—{{_following.username}}</h5>
+    <button ion-button icon-only clear item-end (click)="followingProfile($event, _following)">
+      <ion-icon name="more"></ion-icon>
+    </button>
+  </ion-item>
+
+</ion-content>

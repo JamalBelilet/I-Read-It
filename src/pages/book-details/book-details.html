@@ -1,0 +1,113 @@
+<!--
+  Generated template for the BookDetailsPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <!--<ion-navbar>-->
+  <!--</ion-navbar>-->
+
+  <ion-toolbar>
+
+    <ion-buttons left>
+      <button ion-button icon-only color="royal" (click)="goBack()">
+        <ion-icon name="arrow-back"></ion-icon>
+      </button>
+    </ion-buttons>
+
+    <ion-title>{{book.bookDetails.title}}</ion-title>
+
+    <ion-buttons end>
+      <!--<button ion-button icon-only color="royal">-->
+        <!--<ion-icon name="share"></ion-icon>-->
+      <!--</button>-->
+      <!--<button ion-button icon-only color="royal">-->
+        <!--<ion-icon name="heart"></ion-icon>-->
+      <!--</button>-->
+      <ng-template *ngIf="notMyReview(book.reviewers)">
+
+
+      </ng-template>
+
+      <button ion-button icon-only color="royal" *ngIf="notMyReview(book.reviewers) && !(book.isSaved | async)?.length> 0; else alreadySaved" (click)="saveReview($event, book)">
+        <ion-icon name="ios-bookmark-outline"></ion-icon>
+      </button>
+
+      <ng-template #alreadySaved>
+        <button ion-button icon-only color="royal" (click)="unsaveReview($event, book)" *ngIf="notMyReview(book.reviewers)">
+          <ion-icon name="ios-bookmark"></ion-icon>
+        </button>
+      </ng-template>
+
+
+    </ion-buttons>
+
+  </ion-toolbar>
+
+</ion-header>
+
+
+<ion-content >
+  <ion-list dir="ltr" no-lines>
+    <ion-item class="author"><p>by {{book.bookDetails.author}}</p></ion-item>
+
+    <ion-item class="ion-like-header"><h2>resume</h2></ion-item>
+    <ion-item class="resume-wrapper" item-text-wrap>
+      <!--<div item-start class="social-details">-->
+        <!--<h2>{{getShares()}} shares</h2>-->
+        <!--<h2>{{book.details.social.comments}} comments</h2>-->
+      <!--</div>-->
+
+      <ion-thumbnail *ngIf="book.bookDetails.cover" style="float: right;">
+        <img src="assets/img/{{book.bookDetails.cover}}">
+      </ion-thumbnail>
+
+      <p text-wrap class="resume-text">
+        {{book.resume}}
+      </p>
+
+
+    </ion-item>
+
+    <ion-item-divider></ion-item-divider>
+
+    <ion-item class="ion-like-header"><h2>reviewers</h2></ion-item>
+    <ion-item class="revierwers" *ngFor="let reviewer of book.reviewers">
+      <ion-avatar item-start>
+        <img src="assets/img/{{reviewer.username}}.jpg" alt="{{reviewer.username}}">
+      </ion-avatar>
+      <h2>{{reviewer.name}}</h2>
+      <button ion-button icon-only clear item-end (click)="reviewerProfile($event, reviewer)">
+        <ion-icon name="more"></ion-icon>
+      </button>
+    </ion-item>
+
+    <ion-item-divider></ion-item-divider>
+
+    <ion-item class="ion-like-header"><h2>portions</h2></ion-item>
+
+    <ion-item class="portion" *ngFor="let portion of book.portions">
+      <blockquote text-wrap>{{portion._s}}</blockquote>
+      <div class="actions">
+        <div class="love">
+          <p>{{portion.loves}}</p>
+          <button ion-button icon-only clear (click)="togleLoved(portion)">
+            <ion-icon *ngIf="!portion.me" name="heart-outline"></ion-icon>
+            <ion-icon *ngIf="portion.me" name="heart"></ion-icon>
+          </button>
+        </div>
+        <div class="share">
+          <p>{{portion.shares}}</p>
+          <button ion-button icon-only clear (click)="sharePortion(portion, book.bookDetails.author, book.bookDetails.title)"><ion-icon name="paper-plane"></ion-icon></button>
+        </div>
+        <div class="copy">
+          <p>{{portion.copies}}</p>
+          <button ion-button icon-only clear (click)="copyPortion(portion, book.bookDetails.author, book.bookDetails.title)"><ion-icon name="copy"></ion-icon></button>
+        </div>
+      </div>
+    </ion-item>
+
+  </ion-list>
+</ion-content>

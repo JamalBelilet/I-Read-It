@@ -1,0 +1,52 @@
+page-search {
+
+
+
+  ion-scroll[scrollX] {
+    white-space: nowrap;
+    height: 12em;
+
+    &.reviewers-scroller {
+      height: 17em;
+      .scroll-item {
+        margin-top: .5em;
+        margin-bottom: 0;
+
+        height: 15em;
+        h5 {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    .scroll-item {
+      margin-top: .5em;
+      margin-bottom: 0;
+      display: inline-block;
+      width: 80vw;
+      height: 10em;
+
+      ion-col {
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+      }
+      img {
+        margin: 0;
+        padding: 0;
+      }
+      h3 {
+        font-size: 1.5em;
+      }
+      h5 {
+        font-size: .9em;
+        font-style: italic;
+        margin-bottom: .8em;
+      }
+
+    }
+  }
+
+
+
+}

@@ -1,0 +1,35 @@
+<ion-card *ngFor="let review of reviews " (click)="getDetails(review)">
+
+  <ion-card-header>
+    <ion-row>
+      <ion-col col-10>
+        <h1 text-wrap>{{review.bookDetails.title}}</h1>
+        <h6>by {{review.bookDetails.author}}</h6>
+      </ion-col>
+      <ion-col  col-2 *ngIf="notMyReview(review.reviewers) && !(review.isSaved | async)?.length> 0; else alreadySaved">
+        <button ion-button clear (click)="saveReview($event, review)">
+          <ion-icon class="ios-bookmark-outline" name="ios-bookmark-outline"></ion-icon>
+        </button>
+      </ion-col>
+      <ng-template #alreadySaved>
+        <ion-col col-2 *ngIf="notMyReview(review.reviewers)">
+          <button ion-button clear (click)="unsaveReview($event, review)">
+            <ion-icon class="ios-bookmark-outline" name="ios-bookmark"></ion-icon>
+          </button>
+        </ion-col>
+      </ng-template>
+    </ion-row>
+  </ion-card-header>
+
+  <ion-card-content>
+
+    <!--<h5  ><span >{{review.key}}</span></h5>-->
+    <h5><span *ngFor="let reviewer of review.reviewers">{{reviewer.name}}</span></h5>
+
+
+    <ion-item class="portion">
+      <blockquote text-wrap>{{getHotPortion(review.portions)._s}}</blockquote>
+    </ion-item>
+
+  </ion-card-content>
+</ion-card>

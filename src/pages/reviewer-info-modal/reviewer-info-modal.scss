@@ -1,0 +1,158 @@
+page-reviewer-info-modal {
+  padding: 0;
+
+
+
+  .header-parallax-container {
+    width: 100%;
+    background: linear-gradient(to right, rgba(178, 178, 178, 0), rgba(178, 178, 178, 0.2));
+    color: white;
+    font-size: .9em;
+    padding: 2.5em 1.5em 1.5em 5em;
+    margin: 0;
+    position: relative;
+    border-bottom: .1em solid rgba(0,0,0,.7);
+
+    .close-btn {
+      position: absolute;
+      right: .1em;
+      top: 2.5em;
+      font-size: 1em;
+    }
+
+    .avatar-container {
+      position: absolute;
+      left: 1em;
+      bottom: -2.0em;
+      img {
+        border-radius: 50%;
+        width: 4em;
+        border-bottom: .15em solid rgba(0,0,0,.7);
+
+      }
+    }
+
+
+
+    .portion {
+      color: rgba(0,0,0,.7);
+      margin: 0em 0;
+
+
+
+      blockquote {
+        text-align: left;
+        color: #4d4d4d;
+        position: relative;
+        text-indent: 1em;
+        margin: 0 1em;
+
+        &::before {
+          content: '\201c';
+          font-size: 2.7em;
+          font-family: "Bookman Old Style";
+          position: absolute;
+          left: -.5em;
+          top: -.2em;
+        }
+      }
+
+      .actions {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        margin: 0 3em;
+
+        div {
+          flex: 0 0 auto;
+          display: flex;
+          flex-flow: row nowrap;
+          justify-content: space-around;
+
+          button {
+            height: 2em;
+            ion-icon {
+              line-height: 2em;
+              height: 2em;
+              color: #4d4d4d;
+            }
+          }
+          p {
+            line-height: 2em;
+            height: 2em;
+          }
+        }
+      }
+
+    }
+  }
+
+  .reviewer-nContainer {
+    margin: .2em 0 .5em 0;
+    padding-left: 5.5em;
+    padding-top: .4em;
+
+  }
+  .reviewer-name {
+    font-size: 1.3em;
+    margin: 0;
+
+  }
+  .reviewer-username {
+    display: block;
+    font-style: italic;
+    font-size: .9em;
+    font-weight: lighter;
+    margin: 0;
+
+  }
+  button.start-following {
+    height: 1.8em; margin: .6em;
+  }
+
+  .user-id {
+    font-style: italic;
+    font-size: 75%;
+  }
+  .f-foll {
+    font-weight: bold;
+
+  }
+  .f-counter {
+    font-size: 75%;
+  }
+
+  ion-list {
+    width: 100%;
+  }
+
+  ion-row {
+    width: 100%;
+  }
+
+  .reviewer-social-apps {
+    padding: 1em;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 100%;
+
+    ion-row {
+      ion-row , h3{
+        padding: 0;
+        margin: 0;
+      }
+      ion-icon{
+        font-size: 2em;
+      }
+      p {
+        font-weight: lighter;
+        font-size: 1.1em;
+        padding: 0;
+        margin: 0;
+      }
+    }
+  }
+
+}

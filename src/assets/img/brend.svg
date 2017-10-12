@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 285 322" style="enable-background:new 0 0 285 322;" xml:space="preserve">
+<g id="brend_1_">
+	<radialGradient id="centerPart_1_" cx="190" cy="182" r="79.9312" gradientUnits="userSpaceOnUse">
+		<stop  offset="0" style="stop-color:#FFFFFF"/>
+		<stop  offset="0.1106" style="stop-color:#E7E6E6"/>
+		<stop  offset="1" style="stop-color:#000000"/>
+	</radialGradient>
+	<polygon id="centerPart" style="opacity:0.35;fill:url(#centerPart_1_);" points="136,80 82,158 98,214 77.9,281 199,222 250,249 
+		285,18 181.5,89 	"/>
+	<radialGradient id="topPart_1_" cx="182.7999" cy="38.6616" r="43.0963" gradientUnits="userSpaceOnUse">
+		<stop  offset="0" style="stop-color:#FFFFFF"/>
+		<stop  offset="0.1106" style="stop-color:#E7E6E6"/>
+		<stop  offset="1" style="stop-color:#000000"/>
+	</radialGradient>
+	<polygon id="topPart" style="opacity:0.35;fill:url(#topPart_1_);" points="246,18 181.5,62 100,62 253,0 	"/>
+	<radialGradient id="leftPart_1_" cx="54.1176" cy="226.692" r="54.3877" gradientUnits="userSpaceOnUse">
+		<stop  offset="0" style="stop-color:#FFFFFF"/>
+		<stop  offset="0.1106" style="stop-color:#E7E6E6"/>
+		<stop  offset="1" style="stop-color:#000000"/>
+	</radialGradient>
+	<polygon id="leftPart" style="opacity:0.35;fill:url(#leftPart_1_);" points="100,92 62,192 77.9,227 36,308 0,141 30,136 	"/>
+	<radialGradient id="bottomPart_1_" cx="212.5058" cy="294.1445" r="45.2423" gradientUnits="userSpaceOnUse">
+		<stop  offset="0" style="stop-color:#FFFFFF"/>
+		<stop  offset="0.1106" style="stop-color:#E7E6E6"/>
+		<stop  offset="1" style="stop-color:#000000"/>
+	</radialGradient>
+	<polygon id="bottomPart" style="opacity:0.35;fill:url(#bottomPart_1_);" points="127,314 191,248 285,270 164,322 	"/>
+</g>
+</svg>

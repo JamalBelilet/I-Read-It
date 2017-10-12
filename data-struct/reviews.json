@@ -1,0 +1,104 @@
+[
+  {
+    "bookDetails": {
+      "title": "BARCASS CADUNT",
+      "author": "Parss Resistere",
+      "cover": "barcasscadunt.png"
+    },
+
+    "portions": [
+      {"portionGKey": "", "_s": "Stigma at the colony was the understanding of resistance, accelerated to a human sonic shower.", "copies": 50, "shares": 48, "loves": 65},
+      {"portionGKey": "", "_s": "Pressure at the solar sphere that is when bare pathways experiment.", "copies": 45, "shares": 54, "loves": 95},
+      {"portionGKey": "", "_s": "This history has only been questioned by a cloudy ship. ", "copies": 15, "shares": 84, "loves": 65}
+
+    ],
+    "reviewers": [
+      {
+        "key": "",
+        "name": "Jamal",
+        "username": "jamal"
+      },
+      {
+        "key": "",
+        "name": "Ribika Goes",
+        "username": "ribika_goes"
+      }
+    ]
+
+  },
+  {
+    "bookDetails": {
+      "title": "The Profissor",
+      "author": "Charlote Bronte",
+      "cover": "theprofessor.png"
+    },
+    "reviewers": [
+      {
+        "key": "",
+        "name": "Trevor Hasen",
+        "username": "trevor_hacen"
+      },
+      {
+        "key": "",
+        "name": "Alex Nelson",
+        "username": "alex_nelson"
+      }
+    ],
+    "portions": [
+      {"portionGKey": "", "_s": "Chambray Carles Terry Gibson balls plaid wolf. Disrupt fashion axe 90's quinoa +1 Neutra.", "copies": 100, "shares": 85, "loves": 156},
+      {"portionGKey": "", "_s": "Irony ethnic ennui McSweeney's, semiotics small batch squid direct trade.", "copies": 85, "shares": 10, "loves": 50},
+      {"portionGKey": "", "_s": "Readymade salvia Echo Park scenester. Farm-to-table selvage small batch swag", "copies": 181, "shares": 120, "loves": 215}
+
+    ]
+  },
+  {
+    "bookDetails": {
+      "title": "Wisely translate a transformator",
+      "author": "Pedantically Teleporter",
+      "cover": "Wiselytranslateatransformator.png"
+    },
+    "reviewers": [
+      {
+        "key": "",
+        "name": "Endurance Greed",
+        "username": "endurance_greed"
+      },
+      {
+        "key": "",
+        "name": "Solat Strength",
+        "username": "solat_strength"
+      }
+    ],
+    "portions": [
+      {"portionGKey": "", "_s": "All cannibals mark undead, swashbuckling seas. Furners are the gibbets of the mighty horror.", "copies": 15, "shares": 95, "loves": 15},
+      {"portionGKey": "", "_s": "The scabbard scrapes with yellow fever, haul the pacific ocean before it rises.", "copies": 150, "shares": 51, "loves": 150},
+      {"portionGKey": "", "_s": "The sailor views with love, rob the reef until it rises.", "copies": 845, "shares": 541, "loves": 215}
+
+    ]
+  },
+  {
+    "bookDetails": {
+      "title": "Desire Seashell",
+      "author": "Adobo Sauce",
+      "cover": "desireseashell.png"
+    },
+    "reviewers": [
+      {
+        "key": "",
+        "name": "Hinato Treasure",
+        "username": "hinato_treasure"
+      },
+      {
+        "key": "",
+        "name": "Esolat Scoura",
+        "username": "esolat_scoura"
+      }
+    ],
+    "portions": [
+      {"portionGKey": "", "_s": "Strawberries can be covered with sun-dried bok choy, also try marinateing the chili with joghurt.", "copies": 152, "shares": 145, "loves": 84},
+      {"portionGKey": "", "_s": "The shore vandalizes with power, sail the captain's quarters before it waves.", "copies": 650, "shares": 520, "loves": 250},
+      {"portionGKey": "", "_s": "The sun blows with treasure, fire the brig until it laughs. ", "copies": 145, "shares": 215, "loves": 352}
+
+    ]
+  }
+]

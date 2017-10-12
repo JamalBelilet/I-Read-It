@@ -1,0 +1,103 @@
+// http://ionicframework.com/docs/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+* {
+  font-family: "Futura LT", HelveticaNeue, sans-serif;
+}
+.scroll-content {
+  overflow-y: auto !important;
+}
+ion-menu {
+
+  .reviewer-username {
+    font-style: italic;
+  }
+
+  ion-item {
+
+    &:last-of-type {
+      //margin: -1em auto;
+    }
+    p:first-of-type {
+      color: black;
+    }
+    p:last-of-type {
+      font-size: 70%;
+    }
+  }
+
+  .log-out {
+    margin: 1em auto;
+    color: darken(orangered, 5);
+  }
+}
+
+
+.portion {
+  color: rgba(0,0,0,.7);
+  padding:0 auto;
+  margin: 1em 0;
+
+
+
+  blockquote {
+    text-align: left;
+    color: #4d4d4d;
+    position: relative;
+    text-indent: 1em;
+    margin: 0 1em;
+
+    &::before {
+      content: '\201c';
+      font-size: 2.7em;
+      font-family: "Bookman Old Style";
+      position: absolute;
+      left: -.5em;
+      top: -.2em;
+    }
+  }
+
+  .actions {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin: 0 3em;
+
+    div {
+      flex: 0 0 auto;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-around;
+
+      button {
+        height: 2em;
+        ion-icon {
+          line-height: 2em;
+          height: 2em;
+          color: #4d4d4d;
+        }
+      }
+      p {
+        line-height: 2em;
+        height: 2em;
+      }
+    }
+  }
+
+}
+ion-icon.ios-bookmark-outline {
+  font-size: 2em;
+}

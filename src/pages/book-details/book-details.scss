@@ -1,0 +1,129 @@
+.copied-toast {
+  margin: auto calc(50% - 5em);
+  padding: 0;
+  max-width: 10em;
+  .toast-message {
+    font-family: "Futura LT";
+    font-size: 1.4em;
+    text-align: center;
+
+    max-width: 10em;
+  }
+}
+
+page-book-details {
+
+
+  ion-header {
+    padding-top: 1em;
+  }
+
+
+  ion-content {
+    background-image: none;
+    background-color: whitesmoke;
+
+    .resume-text {
+      font-size: .9em;
+      font-family: "PT Serif";
+      color: #4d4d4d;
+
+    }
+
+    .scroll-content {
+      background: none;
+      //overflow-y: hidden !important;
+
+      .resume-wrapper {
+        margin: 1em 0;
+        padding: 0 1em;
+      }
+
+      .social-details {
+        display: flex;
+        flex-flow: wrap column;
+        justify-content: space-between;
+        height: 10vh;
+
+        h2 {
+          color: rgba(0,0,0,.85)
+        }
+      }
+      .author {
+        background-color: rgba(0,0,0,.22);
+
+        p {
+          color: rgba(0,0,0,.7);
+        }
+      }
+
+      .ion-like-header {
+        h2 {
+
+          color: #8c8c8c;
+
+        }
+      }
+
+      .revierwers {
+        padding: 0 1em;
+
+        h2 {
+          color: #4d4d4d;
+        }
+      }
+
+      .portion {
+        color: rgba(0,0,0,.7);
+        margin: 1em 0;
+
+
+
+        blockquote {
+          text-align: left;
+          color: #4d4d4d;
+          position: relative;
+          text-indent: 1em;
+          margin: 0 1em;
+
+          &::before {
+            content: '\201c';
+            font-size: 2.7em;
+            font-family: "Bookman Old Style";
+            position: absolute;
+            left: -.5em;
+            top: -.2em;
+          }
+        }
+
+        .actions {
+          display: flex;
+          flex-flow: row wrap;
+          justify-content: space-around;
+          margin: 0 3em;
+
+          div {
+            flex: 0 0 auto;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-around;
+
+            button {
+              height: 2em;
+              ion-icon {
+                line-height: 2em;
+                height: 2em;
+                color: #4d4d4d;
+              }
+            }
+            p {
+              line-height: 2em;
+              height: 2em;
+            }
+          }
+        }
+
+      }
+    }
+  }
+}

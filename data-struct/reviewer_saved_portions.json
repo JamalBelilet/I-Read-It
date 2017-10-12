@@ -1,0 +1,39 @@
+
+{
+  "reviewerGKey1": [
+    {
+      "reviewGKey": "reviewGKey2",
+      "portionGKey": "portionGKey1",
+      "portion_s": "Stigma at the colony was the understanding of resistance, accelerated to a human sonic shower.",
+      "bookDetails": {
+        "title": "BARCASS CADUNT",
+        "author": "Parss Resistere",
+        "cover": "barcasscadunt.png"
+      }
+    },
+    {
+      "reviewGKey": "reviewGKey2",
+      "portionGKey": "portionGKey2",
+      "portion_s": "Pressure at the solar sphere that is when bare pathways experiment.",
+      "bookDetails": {
+        "title": "BARCASS CADUNT",
+        "author": "Parss Resistere",
+        "cover": "barcasscadunt.png"
+      }
+    }
+  ],
+  "reviewerGKey2": [
+    {
+      "reviewGKey": "reviewGKey3",
+      "portionGKey": "portionGKey3",
+      "portion_s": "All cannibals mark undead, swashbuckling seas. Furners are the gibbets of the mighty horror.",
+      "bookDetails": {
+        "title": "Wisely translate a transformator",
+        "author": "Pedantically Teleporter",
+        "cover": "Wiselytranslateatransformator.png"
+      }
+    }
+  ]
+}
+
+

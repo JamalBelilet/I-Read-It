@@ -1,0 +1,50 @@
+<!--
+  Generated template for the FollowersModalPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-grid no-padding>
+      <ion-row  justify-content-around>
+
+        <ion-col col-4>
+          <p class="f-foll">followers<span class="f-counter"> ({{(followers$ |async)?.length}})</span></p>
+        </ion-col>
+
+        <ion-col col-6>
+          <ion-searchbar
+            mode="ios"
+            animated="true">
+          </ion-searchbar>
+        </ion-col>
+
+        <ion-col col-1>
+          <button class="f-close" ion-button clear icon-only (click)="closeModal()">
+            <ion-icon name="close"></ion-icon>
+          </button>
+        </ion-col>
+
+      </ion-row>
+    </ion-grid>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+
+  <ion-item class="revierwers" *ngFor="let follower of followers$ | async">
+    <ion-avatar item-start>
+      <img src="assets/img/{{follower.username}}.jpg" alt="{{follower.username}}">
+    </ion-avatar>
+    <h2>{{follower.name}}</h2>
+    <h5 class="user-id">—{{follower.username}}</h5>
+    <button ion-button icon-only clear item-end (click)="followerProfile($event, follower)">
+      <ion-icon name="more"></ion-icon>
+    </button>
+  </ion-item>
+
+</ion-content>

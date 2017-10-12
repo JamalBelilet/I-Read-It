@@ -1,0 +1,127 @@
+[
+
+  {
+    "details" : {
+      "title": "BARCASS CADUNT",
+      "author": "Parss Resistere",
+      "social": {
+        "share": [
+          {"_s": "share", "shares": 50},
+          {"_s": "send", "shares": 650},
+          {"_s": "add", "shares": 500}
+        ],
+        "comments": 250
+      },
+      "cover": "barcasscadunt.png",
+      "reviewers": [
+        {
+          "name": "Jamal",
+          "id": "jamal"
+        },
+        {
+          "name": "Ribika Goes",
+          "id": "ribika_goes"
+        }
+      ],
+      "portions": [
+        {"_s": "Stigma at the colony was the understanding of resistance, accelerated to a human sonic shower.", "copies": 50, "shares": 48, "loves": 65, "me": true},
+        {"_s": "Pressure at the solar sphere that is when bare pathways experiment.", "copies": 45, "shares": 54, "loves": 95, "me": false},
+        {"_s": "This history has only been questioned by a cloudy ship. ", "copies": 15, "shares": 84, "loves": 65, "me": true}
+
+      ]
+    }
+  },
+  {
+    "details ": {
+      "title": "The Profissor",
+      "author": "Charlote Bronte",
+      "social": {
+        "share": [
+          {"_s": "share", "shares": 79},
+          {"_s": "send", "shares": 852},
+          {"_s": "add", "shares": 450}
+        ],
+        "comments": 161
+      },
+      "cover": "theprofessor.png",
+      "reviewers": [
+        {
+          "name": "Trevor Hasen",
+          "id": "trevor_hacen"
+        },
+        {
+          "name": "Alex Nelson",
+          "id": "alex_nelson"
+        }
+      ],
+      "portions": [
+        {"_s": "Chambray Carles Terry Gibson balls plaid wolf. Disrupt fashion axe 90's quinoa +1 Neutra.", "copies": 100, "shares": 85, "loves": 156, "me": false},
+        {"_s": "Irony ethnic ennui McSweeney's, semiotics small batch squid direct trade.", "copies": 85, "shares": 10, "loves": 50, "me": false},
+        {"_s": "Readymade salvia Echo Park scenester. Farm-to-table selvage small batch swag", "copies": 181, "shares": 120, "loves": 215, "me": false}
+
+      ]
+    }
+  },
+  {
+    "details" : {
+      "title": "Wisely translate a transformator",
+      "author": "Pedantically Teleporter",
+      "social": {
+        "share": [
+          {"_s": "share", "shares": 65},
+          {"_s": "send", "shares": 154},
+          {"_s": "add", "shares": 245}
+        ],
+        "comments": 151
+      },
+      "cover": "Wiselytranslateatransformator.png",
+      "reviewers": [
+        {
+          "name": "Endurance Greed",
+          "id": "endurance_greed"
+        },
+        {
+          "name": "Solat Strength",
+          "id": "solat_strength"
+        }
+      ],
+      "portions": [
+        {"_s": "All cannibals mark undead, swashbuckling seas. Furners are the gibbets of the mighty horror.", "copies": 15, "shares": 95, "loves": 15, "me": false},
+        {"_s": "The scabbard scrapes with yellow fever, haul the pacific ocean before it rises.", "copies": 150, "shares": 51, "loves": 150, "me": false},
+        {"_s": "The sailor views with love, rob the reef until it rises.", "copies": 845, "shares": 541, "loves": 215, "me": false}
+
+      ]
+    }
+  },
+  {
+    "details" : {
+      "title": "Desire Seashell",
+      "author": "Adobo Sauce",
+      "social": {
+        "share": [
+          {"_s": "share", "shares": 54},
+          {"_s": "send", "shares": 546},
+          {"_s": "add", "shares": 154}
+        ],
+        "comments": 152
+      },
+      "cover": "desireseashell.png",
+      "reviewers": [
+        {
+          "name": "Hinato Treasure",
+          "id": "hinato_treasure"
+        },
+        {
+          "name": "Esolat Scoura",
+          "id": "esolat_scoura"
+        }
+      ],
+      "portions": [
+        {"_s": "Strawberries can be covered with sun-dried bok choy, also try marinateing the chili with joghurt.", "copies": 152, "shares": 145, "loves": 84, "me": false},
+        {"_s": "The shore vandalizes with power, sail the captain's quarters before it waves.", "copies": 650, "shares": 520, "loves": 250, "me": true},
+        {"_s": "The sun blows with treasure, fire the brig until it laughs. ", "copies": 145, "shares": 215, "loves": 352, "me": false}
+
+      ]
+    }
+  }
+]

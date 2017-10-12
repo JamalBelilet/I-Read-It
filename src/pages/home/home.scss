@@ -1,0 +1,165 @@
+page-home {
+
+  * {
+    color: #CCCCCC;
+
+  }
+  ion-content {
+    background-image: url("../assets/img/old-books-436498_1920.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+  }
+
+
+  #brand {
+    position: absolute;
+    top: 2%;
+    left: 50% - 45/2;
+    width: 45%;
+  }
+  .scroll-content {
+    background: linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.45));
+  }
+  ion-slides {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+    h2 {
+      position: absolute;
+      top: 20%;
+      left: 5%;
+      font-size: 2.1em;
+      text-align: left;
+
+      & span {
+        font-size: .5em;
+        opacity: .55;
+        display: block;
+      }
+    }
+
+    h5 {
+      position: absolute;
+      top: 2.5%;
+      left: 5%;
+      font-size: .9em;
+      opacity: .55;
+
+      &.h-portions {
+        right: 2.5%;
+        text-align: right;
+
+      }
+      & span {
+        display: block;
+        text-align: left;
+      }
+    }
+
+    div.portions p {
+      margin-bottom: 1.4em;
+      padding: 0 .5em;
+      font-size: 1.3em;
+      text-align: right;
+      opacity: .90;
+      font-weight: 200;
+      position: relative;
+
+      & span {
+        font-size: .6em;
+        opacity: .55;
+        display: block;
+      }
+
+    }
+
+    .swiper-pagination-bullet {
+      width: .8em;
+      height: .8em;
+      background: rgba(200, 200, 200, .95);
+
+    }
+    .swiper-pagination-bullet-active {
+      background: rgba(200, 200, 200, .95);
+      width: 1em;
+      height: 1em;
+
+    }
+  }
+
+
+  .login {
+
+    position: absolute;
+    bottom: 30%;
+    right: 0;
+    width: 100%;
+
+    ion-input {
+      font-size: 1.1em;
+      background-color: rgba(0,0,0,.35);
+      margin: .8em 5% .1em 5%;
+      padding: .2em .4em .8em .3em;
+      border-radius: 2.25px;
+      width: 90%;
+    }
+
+    ion-col {
+      padding: 0;
+      margin: 0;
+
+      button {
+        padding: 0;
+        margin: 0;
+        border: 0;
+
+        &#loginBtn {
+          font-size: 1.4em;
+        }
+      }
+    }
+
+  }
+
+  ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #CCCCCC;
+    font-size: .8em;
+    opacity: .65;
+    font-weight: lighter;
+
+  }
+
+  .logo {
+
+    width: 10em;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    margin-left: -5em;
+    opacity: .8;
+
+    img {
+    }
+  }
+
+}
+
+.error-container {
+  height: 0;
+  margin: 0 auto;
+
+}
+.error {
+  color: orangered;
+  font-size: .9em;
+  font-weight: lighter;
+  text-align: center;
+  background-color: rgba(0,0,0,.7);
+  margin: .5em auto;
+  padding: .1em .3em;
+  width: 8em;
+  border-radius: .4em;
+}

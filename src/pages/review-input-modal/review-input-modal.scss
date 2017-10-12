@@ -1,0 +1,20 @@
+page-review-input-modal {
+
+  ion-item:first-of-type {
+    margin: 5vh auto;
+
+  }
+
+  ion-textarea {
+    height: auto;
+  }
+
+  ion-footer {
+    ion-buttons {
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+
+
+}

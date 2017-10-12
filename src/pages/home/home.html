@@ -1,0 +1,69 @@
+<!--<ion-header>-->
+  <!--<ion-navbar>-->
+    <!--<button ion-button menuToggle>-->
+      <!--<ion-icon name="menu"></ion-icon>-->
+    <!--</button>-->
+    <!--<ion-title>Home</ion-title>-->
+  <!--</ion-navbar>-->
+<!--</ion-header>-->
+
+<!--<ion-content padding>-->
+  <!--<h3>Ionic Menu Starter</h3>-->
+
+  <!--<p>-->
+    <!--If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.-->
+  <!--</p>-->
+
+  <!--<button ion-button secondary menuToggle>Toggle Menu</button>-->
+<!--</ion-content>-->
+
+
+
+<ion-content>
+
+  <ion-slides pager (ionSlideDidChange)="SlidesDidChanged()">
+    <ion-slide>
+      <h5>DJAMALEDDINE BELILET <span>j books</span></h5>
+      <h2>NO TWO PERSONS EVER READ THE SAME BOOK<span>Edmund Wilson</span></h2>
+    </ion-slide>
+    <ion-slide>
+      <h5 class="h-portions">HOT PORTIONS</h5>
+      <div class="portions">
+        <p>There is some good in this world, and it's worth fighting for.<span>J.R.R. Tolkien, The Two Towers</span></p>
+        <!--<p>Well-behaved women seldom make history.<span>Laurel Thatcher Ulrich, Well-behaved Women Seldom Make History</span></p>-->
+        <p>It is better to be hated for what you are than to be loved for what you are not.<span>Andre Gide, Autumn Leaves</span></p>
+        <p>Who, being loved, is poor?<span>Oscar Wild, A Woman of No Importance</span></p>
+        <p>Every human life is worth the same, and worth saving.<span>J.K. Rowling, Harry Potter and the Deathly Hallows</span></p>
+      </div>
+    </ion-slide>
+    <ion-slide>
+      <div class="logo">
+        <img src="./assets/icon/jBooks.svg" alt="jbooks logo">
+      </div>
+      <div class="login">
+        <ion-row>
+          <ion-input type="text" placeholder="Mail" [(ngModel)]="reviewerCredentials.mail"></ion-input>
+        </ion-row>
+        <ion-row>
+          <ion-input type="password" placeholder="Password" [(ngModel)]="reviewerCredentials.password"></ion-input>
+        </ion-row>
+
+        <ion-row>
+          <ion-col>
+            <button ion-button outline id="loginBtn" (click)="login()">Log in</button>
+          </ion-col>
+          <ion-col>
+            <button ion-button outline (click)="getSignUpPage()">Sign up</button>
+          </ion-col>
+        </ion-row>
+
+        <ion-row *ngIf="toggleLoginError">
+          <div class="error-container">
+            <p text-wrap class="error">there is no reviewer with thise credentials</p>
+          </div>
+        </ion-row>
+
+      </div>
+    </ion-slide>
+  </ion-slides>
+</ion-content>

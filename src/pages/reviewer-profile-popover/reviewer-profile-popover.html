@@ -1,0 +1,25 @@
+<!--
+  Generated template for the ReviewerProfilePopoverPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-item no-lines>
+  <ion-avatar>
+
+    <img src="assets/img/{{reviewer.username}}.jpg" alt="reviewer.username">
+    <div class="avatar-picker">
+      <button ion-button (click)="getReviewerInfoModel()">
+        <span>view profile</span>
+      </button>
+    </div>
+  </ion-avatar>
+
+  <!--<h5>_jamal_</h5>-->
+</ion-item>
+<ion-item  no-lines>
+  <h2>{{reviewer.name}} <span>( _{{reviewer.username}}_ )</span></h2>
+</ion-item >
+<ion-item class="portion"  no-lines>
+  <blockquote text-wrap>{{portion._s}}<br><span class="portion-author-book">—{{portion.author}}, <span>{{portion.book}}</span></span></blockquote>
+</ion-item>

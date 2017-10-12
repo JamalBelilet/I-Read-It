@@ -1,0 +1,35 @@
+
+<ion-content>
+
+  <div class="logo">
+    <img src="./assets/icon/jBooks.svg" alt="jbooks logo">
+  </div>
+
+  <div class="sign-up">
+
+    <ion-row>
+      <ion-list inset no-lines>
+        <ion-item>
+          <ion-input type="text" placeholder="Full name" [(ngModel)]="reviewerCredentials.name"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input type="mail" placeholder="Email or phone number" [(ngModel)]="reviewerCredentials.mail"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input type="text" placeholder="username"  [(ngModel)]="reviewerCredentials.username"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input type="password" placeholder="Password" [(ngModel)]="reviewerCredentials.password"></ion-input>
+        </ion-item>
+      </ion-list>
+    </ion-row>
+    <ion-row class="btns" justify-content-around>
+      <ion-col>
+        <button ion-button outline id="signUpBtn" (click)="signup()">Sign Up</button>
+      </ion-col>
+      <ion-col>
+        <button ion-button outline (click)="getMeBack()">Log in</button>
+      </ion-col>
+    </ion-row>
+  </div>
+</ion-content>

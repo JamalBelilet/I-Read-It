@@ -1,0 +1,21 @@
+{
+  "reviewerGKey1": {
+    "notificationGKey1": {
+      "type": "love",
+      "reviewGKey": "reviewGKey1",
+      "notifierGKey": "notifierGKey1"
+    },
+    "notificationGKey2": {
+      "type": "share",
+      "reviewGKey": "reviewGKey2",
+      "notifierGKey": "notifierGKey2"
+    }
+  },
+  "reviewerGKey2": {
+    "notificationGKey3": {
+      "type": "invitation",
+      "reviewGKey": "reviewGKey3",
+      "notifierGKey": "notifierGKey3"
+    }
+  }
+}

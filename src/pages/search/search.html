@@ -1,0 +1,112 @@
+<!--
+  Generated template for the SearchPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-toolbar>
+
+    <ion-buttons left>
+
+      <button menuToggle ion-button icon-only color="royal">
+        <img src="assets/img/jamal.jpg" alt="jamal"  style="max-width: 1.8em; border-radius: 50%">
+      </button>
+    </ion-buttons>
+
+    <ion-searchbar
+      mode="ios"
+      align-self-end
+      col-auto
+      animated="true">
+    </ion-searchbar>
+
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content >
+
+  <ion-list>
+
+    <ion-list-header>
+      books
+    </ion-list-header>
+    <ion-scroll scrollX>
+      <ion-card class="scroll-item">
+        <ion-card-content>
+          <ion-row>
+            <ion-col style="max-width: 6em;">
+              <img src="assets/img/Wiselytranslateatransformator.png" style="width: 6em;">
+            </ion-col>
+            <ion-col text-wrap justify-content-between>
+              <h3>Abstruse affirmations</h3>
+              <h5>by With asparagus drink</h5>
+              <h5 class="reviews-badge"> <ion-badge>95 reviews</ion-badge></h5>
+            </ion-col>
+          </ion-row>
+        </ion-card-content>
+      </ion-card>
+      <ion-card class="scroll-item">
+        <ion-card-content>
+          <ion-row>
+            <ion-col style="max-width: 6em;">
+              <img src="assets/img/desireseashell.png" style="width: 6em;">
+            </ion-col>
+            <ion-col text-wrap justify-content-between>
+              <h3>With seaweeds buttermilk. </h3>
+              <h5>by Ho-ho-ho! death</h5>
+              <h5 class="reviews-badge"> <ion-badge>15 reviews</ion-badge></h5>
+            </ion-col>
+          </ion-row>
+        </ion-card-content>
+      </ion-card>
+    </ion-scroll>
+
+    <ion-list-header>
+      reviewers
+    </ion-list-header>
+    <ion-scroll scrollX class="reviewers-scroller">
+      <ion-card class="scroll-item " *ngFor="let reviewer of reviewers$ | async">
+        <ion-card-content>
+          <ion-item no-lines>
+            <ion-avatar item-start>
+              <img src="assets/img/{{reviewer.username}}.jpg" >
+            </ion-avatar>
+            <h2>{{reviewer.name}}</h2>
+            <h5 class="reviewer-username">—{{reviewer.username}}</h5>
+            <ion-item no-lines no-padding>
+              <button ion-button outline item-start (click)="getReviewerInfo(reviewer)">view profile</button>
+              <button ion-button outline item-end>follow</button>
+            </ion-item>
+          </ion-item>
+          <ion-item no-lines>
+            <ion-row>
+              <ion-col >
+                <p>.</p>
+                <p>reviews</p>
+              </ion-col>
+              <ion-col>
+                <p>{{reviewer.followers}}</p>
+                <p>followers</p>
+              </ion-col>
+              <ion-col>
+                <p>{{reviewer.following}}</p>
+                <p>following</p>
+              </ion-col>
+            </ion-row>
+          </ion-item>
+
+        </ion-card-content>
+      </ion-card>
+    </ion-scroll>
+
+    <ion-list-header>
+      reviews
+    </ion-list-header>
+    <review-holder [reviews]="reviews$ | async"></review-holder>
+
+  </ion-list>
+
+
+</ion-content>

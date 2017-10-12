@@ -1,0 +1,8 @@
+{
+  "name": "jBooks-v.2",
+  "app_id": "7a21275f",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}

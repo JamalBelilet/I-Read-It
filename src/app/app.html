@@ -1,0 +1,60 @@
+<ion-menu [content]="content">
+  <ion-header>
+    <ion-toolbar>
+      <!--<ion-title>Menu</ion-title>-->
+      <ion-item no-lines>
+        <ion-avatar item-start  (click)="getReviewerInfoModel()">
+          <img src="assets/img/{{reviewer.username}}.jpg" alt="">
+        </ion-avatar>
+        <h2>{{reviewer.name}}</h2>
+        <h5 class="reviewer-username">—{{reviewer.username}}</h5>
+        <button ion-button icon-only clear item-end (click)="getReviewerInfoModel()">
+          <ion-icon name="more"   ></ion-icon>
+        </button>
+      </ion-item>
+      <ion-item no-lines>
+        <ion-row>
+          <ion-col  (click)="getMyReviews()">
+            <p>{{reviewer.myreviews}}</p>
+            <p>reviews</p>
+          </ion-col>
+          <ion-col (click)="getFollowers()">
+            <p>{{reviewer.followers}}</p>
+            <p>followers</p>
+          </ion-col>
+          <ion-col (click)="getFollowing()">
+            <p>{{reviewer.following}}</p>
+            <p>following</p>
+          </ion-col>
+        </ion-row>
+      </ion-item>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+    <ion-list >
+      <button menuClose ion-item (click)="getMyReviews()">
+        my reviews
+      </button>
+      <button menuClose ion-item (click)="getSavedReviews()">
+        saved reviews
+      </button>
+      <button menuClose ion-item (click)="getSavedPortions()">
+        saved portions
+      </button>
+      <!--<button menuClose ion-item (click)="getMyHotPortions()">-->
+        <!--hot portions-->
+      <!--</button>-->
+      <!--<button menuClose ion-item (click)="getProfileInfo()" >-->
+        <!--profile-->
+      <!--</button>-->
+      <button class="log-out" menuClose ion-item no-lines (click)="signout()">
+        log out
+      </button>
+    </ion-list>
+  </ion-content>
+
+</ion-menu>
+
+<!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>

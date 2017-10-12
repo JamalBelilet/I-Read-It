@@ -1,0 +1,21 @@
+
+
+page-more-book-popover {
+
+
+
+  div {
+    display: flex;
+    flex-flow: wrap column;
+    justify-content: center;
+    width: 9em;
+
+
+    button {
+      flex: 1 0 auto;
+      padding: 1em 1em;
+      width: 9em;
+      background-color: transparent;
+    }
+  }
+}

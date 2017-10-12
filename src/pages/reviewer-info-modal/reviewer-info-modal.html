@@ -1,0 +1,126 @@
+<!--
+  Generated template for the ReviewerInfoModalPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<!--<ion-header>-->
+
+  <!--<ion-navbar>-->
+    <!--<ion-title>{{reviewer.name}}</ion-title>-->
+    <!--<ion-buttons end>-->
+      <!--<button ion-button (click)="closeModal()">-->
+        <!--<ion-icon name="close"></ion-icon>-->
+      <!--</button>-->
+    <!--</ion-buttons>-->
+  <!--</ion-navbar>-->
+
+<!--</ion-header>-->
+
+
+<ion-content>
+  <ion-row>
+    <div class="header-parallax-container">
+      <button class="close-btn" ion-button icon-only clear item-end (click)="closeModal()">
+        <ion-icon name="close"   ></ion-icon>
+      </button>
+
+      <div class="portion">
+        <blockquote>Visus de fortis epos, visum humani generis! Alter hydras ducunt ad magister!</blockquote>
+      </div>
+
+      <div class="avatar-container">
+        <img src="assets/img/{{reviewer.username}}.jpg" alt="">
+      </div>
+
+    </div>
+
+    <div class="reviewer-nContainer">
+      <ion-row>
+        <ion-col>
+          <h2 text-wrap="false" class="reviewer-name">{{reviewer.name}} <span class="reviewer-username">—{{reviewer.username}}</span></h2>
+        </ion-col>
+        <ion-col *ngIf="(loggedReviewer| async)?.uid != reviewer.$key; else isEditEnables">
+          <button class="start-following" *ngIf="(reviewer.isFollowed  | async)?.length> 0; else followed" ion-button  item-end (click)="unfollow(reviewer)">follow</button>
+          <ng-template #followed>
+            <button class="start-following" outline ion-button item-end (click)="startFollowing(reviewer)">follow</button>
+          </ng-template>
+        </ion-col>
+
+        <ng-template #isEditEnables>
+          <ion-col>
+            <button class="start-following"  ion-button  outline item-end (click)="editProfile(reviewer)">edit</button>
+          </ion-col>
+        </ng-template>
+
+      </ion-row>
+
+
+
+    </div>
+  </ion-row>
+
+  <ion-row class="reviewer-social-apps">
+    <ion-col no-lines *ngFor="let _social of reviewer.social">
+
+        <ion-row justify-content-start align-items-start>
+          <ion-icon name="logo-{{_social.app}}" ></ion-icon>
+        </ion-row>
+        <ion-row>
+          <p id="name-in-app">{{_social.name}}</p>
+        </ion-row>
+
+    </ion-col>
+  </ion-row>
+
+  <ion-row>
+
+    <ion-row style="width: 100%">
+      <ion-segment [(ngModel)]="segmentOption">
+        <ion-segment-button value="reviews" style="width: 30%">
+          reviews
+        </ion-segment-button>
+        <ion-segment-button value="following" style="width: 30%">
+          following
+        </ion-segment-button>
+        <ion-segment-button value="followers" style="width: 30%">
+          followers
+        </ion-segment-button>
+      </ion-segment>
+    </ion-row>
+
+    <ion-row [ngSwitch]="segmentOption">
+      <ion-list *ngSwitchCase="'reviews'">
+        <review-holder [reviews]="reviews$ | async"></review-holder>
+      </ion-list>
+
+      <ion-list *ngSwitchCase="'following'">
+        <ion-item class="revierwers" *ngFor="let _following of following$ | async">
+          <ion-avatar item-start>
+            <img src="assets/img/{{_following.username}}.jpg" alt="{{_following.username}}">
+          </ion-avatar>
+          <h2>{{_following.name}}</h2>
+          <h5 class="user-id">—{{_following.username}}</h5>
+          <button ion-button icon-only clear item-end (click)="followingProfile($event, _following)">
+            <ion-icon name="more"></ion-icon>
+          </button>
+        </ion-item>
+      </ion-list>
+
+      <ion-list *ngSwitchCase="'followers'">
+        <ion-item class="revierwers" *ngFor="let follower of followers$ | async">
+          <ion-avatar item-start>
+            <img src="assets/img/{{follower.username}}.jpg" alt="{{follower.username}}">
+          </ion-avatar>
+          <h2>{{follower.name}}</h2>
+          <h5 class="user-id">—{{follower.username}}</h5>
+          <button ion-button icon-only clear item-end (click)="followerProfile($event, follower)">
+            <ion-icon name="more"></ion-icon>
+          </button>
+        </ion-item>
+      </ion-list>
+    </ion-row>
+
+  </ion-row>
+
+</ion-content>

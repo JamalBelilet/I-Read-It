@@ -1,0 +1,43 @@
+
+{
+  "reviewerGKey1": [
+    {
+      "reviewGKey1": "",
+      "bookDetails": {
+        "title": "BARCASS CADUNT",
+        "author": "Parss Resistere",
+        "cover": "barcasscadunt.png"
+      }
+    },
+    {
+      "reviewGKey2": "",
+      "bookDetails": {
+        "title": "The Profissor",
+        "author": "Charlote Bronte",
+        "cover": "theprofessor.png"
+      }
+    }
+  ],
+  "reviewerGKey2": [
+    {
+      "reviewGKey3": "",
+      "bookDetails": {
+        "title": "Wisely translate a transformator",
+        "author": "Pedantically Teleporter",
+        "cover": "Wiselytranslateatransformator.png"
+      }
+    }
+  ],
+  "reviewerGKey3": [
+    {
+      "reviewGKey4": "",
+      "bookDetails": {
+        "title": "Desire Seashell",
+        "author": "Adobo Sauce",
+        "cover": "desireseashell.png"
+      }
+    }
+  ]
+}
+
+
