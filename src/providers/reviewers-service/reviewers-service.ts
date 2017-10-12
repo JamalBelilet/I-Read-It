@@ -47,20 +47,16 @@ export class ReviewersServiceProvider {
       name: reviewer.name,
       username: reviewer.username,
       mail: reviewer.mail
-    })
-      .then(
-        (e) => {
-          this.afDatabase.object(`reviewers/${this.loggedReviewer.$key}`).update({following: this.loggedReviewer.following + 1 });
+    });
+    this.afDatabase.object(`reviewers/${this.loggedReviewer.$key}`).update({following: this.loggedReviewer.following + 1 });
+    this.afDatabase.list(`reviewer_followers/${reviewer.$key}`).push({
+      key: this.loggedReviewer.$key,
+      name: this.loggedReviewer.name,
+      username: this.loggedReviewer.username,
+      mail: this.loggedReviewer.mail
+    });
+    this.afDatabase.object(`reviewers/${reviewer.key}`).update({followers: reviewer.followers + 1 });
 
-          this.afDatabase.list(`reviewer_followers/${reviewer.$key}`).push({
-            key: this.loggedReviewer.$key,
-            name: this.loggedReviewer.name,
-            username: this.loggedReviewer.username,
-            mail: this.loggedReviewer.mail
-          });
-          this.afDatabase.object(`reviewers/${reviewer.key}`).update({followers: reviewer.followers + 1 });
-        }
-      )
   }
 
   unfollow(reviewer) {
@@ -79,12 +75,7 @@ export class ReviewersServiceProvider {
     });
 
     this.afDatabase.object(`reviewers/${this.loggedReviewer.$key}`).update({following: this.loggedReviewer.following - 1 });
-
     this.afDatabase.object(`reviewers/${reviewer.key}`).update({followers: reviewer.followers - 1 });
-    //
-    //
-    //
-    //
     let toBeUnfollowedRev$ =this.afDatabase.list(`reviewer_followers/${reviewer.$key}`, {
       query: {
         orderByChild: 'key',
@@ -95,7 +86,7 @@ export class ReviewersServiceProvider {
       for( let _toBeUnfollowedRev of toBeUnfollowedRev ) {
         toBeUnfollowedRev$.remove(_toBeUnfollowedRev.$key);
       }
-      toBeUnfollowedExec.unsubscribe();
+      toBeUnfollowedRevExec.unsubscribe();
     });
 
   }
