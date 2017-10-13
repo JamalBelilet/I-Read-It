@@ -82,7 +82,7 @@ export class ReviewersServiceProvider {
         equalTo: this.loggedReviewer.$key
       }
     });
-    let toBeUnfollowedRevExec = toBeUnfollowed$.subscribe( toBeUnfollowedRev => {
+    let toBeUnfollowedRevExec = toBeUnfollowedRev$.subscribe( toBeUnfollowedRev => {
       for( let _toBeUnfollowedRev of toBeUnfollowedRev ) {
         toBeUnfollowedRev$.remove(_toBeUnfollowedRev.$key);
       }
