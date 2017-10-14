@@ -24,3 +24,5 @@ $ ionic cordova run ios
 
 Substitute ios for android if not on a Mac.
 
+# jBooks
+A Social Media Network for Books Readers where they can read reviews, write, and share theme on Facebook, Twitter, and many more
