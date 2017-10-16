@@ -26,6 +26,7 @@ export class SearchPage {
   reviewer: any;
   reviewers$: FirebaseListObservable<any[]>;
   reviews$: Observable<any>;
+  books$: Observable<any>;
 
 
   constructor(
@@ -45,6 +46,7 @@ export class SearchPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad SearchPage');
+    this.books$ = this.reviewsService.getBooks();
     this.reviews$ = this.reviewsService.getReviews();
     this.reviewers$ = this.reviwersService.getAllReviewers();
   }

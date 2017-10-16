@@ -173,4 +173,30 @@ export class ReviewsServiceProvider {
         }))
   }
 
+  getBooks() {
+    return this.afDatabase.list(`reviews`)
+      .map( review => {
+        let _book;
+        [_book.title, _book.autor, _book.cover ] = [ review.bookDetails.title, review.bookDetails.author, review.bookDetails.cover ];
+        _book.reviewsCounter$ = this.countBookReviews(_book.title);
+
+        return _book;
+      })
+      .map( reviewKeys => reviewKeys
+        .filter((review, index, self) =>
+          self.findIndex((t) =>
+          {console.log(t[0].$key); console.log(review[0].$key);}
+          ) === index
+        ));
+  }
+
+  countBookReviews(bookTitle) {
+    return this.afDatabase.list(`reviews`, {
+      query: {
+        orderByChild: 'bookDetails/title',
+        equalTo: bookTitle
+      }
+    })
+  }
+
 }
