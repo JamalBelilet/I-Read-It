@@ -24,6 +24,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { SocialSharing } from '@ionic-native/social-sharing';
 import { Clipboard } from '@ionic-native/clipboard';
+import { FCM } from '@ionic-native/fcm';
+
 import { SavedReviewsModalPage } from '../pages/saved-reviews-modal/saved-reviews-modal';
 import { SavedPortionsModalPage } from '../pages/saved-portions-modal/saved-portions-modal';
 import {MoreBookPopoverPage} from '../pages/more-book-popover/more-book-popover';
@@ -124,6 +126,7 @@ var firebaseConfig = {
     AngularFireDatabase,
     SocialSharing,
     Clipboard,
+    FCM,
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},

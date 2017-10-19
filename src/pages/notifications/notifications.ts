@@ -28,7 +28,7 @@ export class NotificationsPage {
 
 
   constructor(
-    private notificationServiceProvider: NotificationsServiceProvider,
+    private notificationService: NotificationsServiceProvider,
     public navCtrl: NavController,
     public navParams: NavParams) {
 
