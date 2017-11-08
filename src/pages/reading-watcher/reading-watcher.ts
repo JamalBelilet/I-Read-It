@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {AlertController, IonicPage, NavController, NavParams} from 'ionic-angular';
+import {AlertController, NavController, NavParams} from 'ionic-angular';
 
 import { trigger, state, style, animate, transition } from '@angular/animations';
 
@@ -10,7 +10,6 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
  * on Ionic pages and navigation.
  */
 
-@IonicPage()
 @Component({
   selector: 'page-reading-watcher',
   templateUrl: 'reading-watcher.html',
