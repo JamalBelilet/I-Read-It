@@ -29,10 +29,10 @@
 
   <ion-list no-lines>
 
-    <ion-list-header>
+    <ion-list-header *ngIf="(books$ | async)">
       books
     </ion-list-header>
-    <ion-scroll scrollX>
+    <ion-scroll scrollX *ngIf="(books$ | async)">
       <ion-card class="scroll-item " *ngFor="let book of books$ | async">
         <ion-card-content (click)="consoleLog(book)">
           <ion-row>
@@ -52,10 +52,10 @@
       </ion-card>
     </ion-scroll>
 
-    <ion-list-header>
+    <ion-list-header  *ngIf="(reviewers$ | async) && (books$ | async)">
       reviewers
     </ion-list-header>
-    <ion-scroll scrollX class="reviewers-scroller">
+    <ion-scroll scrollX class="reviewers-scroller"  *ngIf="(reviewers$ | async)">
       <ion-card class="scroll-item " *ngFor="let reviewer of reviewers$ | async">
         <ion-card-content>
           <ion-item no-lines>
@@ -90,7 +90,7 @@
       </ion-card>
     </ion-scroll>
 
-    <ion-list-header>
+    <ion-list-header *ngIf="(reviews$ | async) && (reviewers$ | async) && (books$ | async)">
       reviews
     </ion-list-header>
     <review-holder [reviews]="reviews$ | async"></review-holder>

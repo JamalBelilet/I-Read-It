@@ -1,55 +1,145 @@
-
 page-books {
-
-
   ion-toolbar {
     p {
       font-weight: 700;
     }
   }
 
-
   ion-content {
     background-image: none;
     background-color: whitesmoke;
-
 
     .scroll-content {
       background: none;
       //overflow-y: hidden !important;
 
+      .loading-portion {
+        font-size: 1.2em;
+        padding: 0 1em;
+
+        blockquote {
+          &::before {
+            content: '\201c';
+            font-size: 2.7em;
+            font-family: "Bookman Old Style";
+            position: absolute;
+            left: -.5em;
+            top: -.2em;
+          }
+
+          & > span {
+            display: block;
+            text-align: right;
+            margin-right: 1.2em;
+            margin-bottom: 1.2em;
+            margin-top: .2em;
+
+            font-size: 80%;
+
+            span {
+              font-style: italic;
+            }
+          }
+
+        }
+
+      }
+
+
+
+      .ml5, ._ml5 {
+        position: relative;
+        font-weight: 300;
+        color: #402d2d;
+        text-align: left;
+        padding: .0 0;
+
+
+      }
+      ._ml5 {
+        margin-left: 30%;
+        margin-top: -1em;
+
+      }
+
+      .ml5 .text-wrapper, ._ml5 ._text-wrapper  {
+        position: relative;
+        display: inline-block;
+        padding-top: 0.1em;
+        padding-bottom: 0.15em;
+        line-height: 1em;
+        padding-left: .5em;
+        padding-right: .5em;
+      }
+
+      .ml5 .line, ._ml5 ._line {
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        background-color: black;
+        transform-origin: 0.5 0;
+      }
+
+      ._ml5 ._line {
+        width: 50vw;
+        border-radius: 2em;
+        height: .05em;
+
+        opacity: 0;
+      }
+
+      .ml5 .ampersand, ._ml5 ._ampersand {
+        font-family: Baskerville, "EB Garamond", serif;
+        font-style: italic;
+        font-weight: 400;
+        width: 1em;
+        margin-right: -0.1em;
+        margin-left: -0.1em;
+      }
+
+      .ml5 .letters, ._ml5 ._letters {
+        display: inline-block;
+        opacity: 0;
+        text-align: left;
+
+        &.letters-right {
+          font-size: .5em;
+          opacity: .55;
+        }
+      }
+
+
+
+
       ion-icon.ios-bookmark-outline {
         font-size: 2em;
       }
 
-
-
-
       h6 {
         font-style: italic;
         font-size: 85%;
-        text-indent: .2em;
+        text-indent: 0.2em;
       }
 
       h5 {
         span {
-          color: rgba(0,0,0,.85);
+          color: rgba(0, 0, 0, 0.85);
 
           &:after {
-            content: ' | ';
+            content: " | ";
           }
-          &:last-of-type:after{
+          &:last-of-type:after {
             content: none;
           }
         }
       }
 
       .portion {
-        color: rgba(0,0,0,.7);
-        padding:0 auto;
+        color: rgba(0, 0, 0, 0.7);
+        padding: 0 auto;
         margin: 1em 0;
-
-
 
         blockquote {
           text-align: left;
@@ -59,12 +149,12 @@ page-books {
           margin: 0 1em;
 
           &::before {
-            content: '\201c';
+            content: "\201c";
             font-size: 2.7em;
             font-family: "Bookman Old Style";
             position: absolute;
-            left: -.5em;
-            top: -.2em;
+            left: -0.5em;
+            top: -0.2em;
           }
         }
 
@@ -94,9 +184,7 @@ page-books {
             }
           }
         }
-
       }
-
     }
   }
 }

@@ -166,7 +166,7 @@ page-home {
 
 
 
-  .ml5 {
+  .ml5, ._ml5 {
     position: relative;
     font-weight: 300;
     color: #402d2d;
@@ -174,10 +174,17 @@ page-home {
     text-align: left;
     padding: .2 0;
 
-    
+
   }
-  
-  .ml5 .text-wrapper {
+  ._ml5 {
+    position: absolute;
+    top: -.2em;
+    left: 50%;
+    margin-left: -1.7em;
+
+  }
+
+  .ml5 .text-wrapper, ._ml5 ._text-wrapper  {
     position: relative;
     display: inline-block;
     padding-top: 0.1em;
@@ -186,8 +193,8 @@ page-home {
     padding-left: .5em;
     padding-right: .5em;
   }
-  
-  .ml5 .line {
+
+  .ml5 .line, ._ml5 ._line {
     position: absolute;
     left: 0;
     top: 0;
@@ -198,8 +205,15 @@ page-home {
     background-color: whitesmoke;
     transform-origin: 0.5 0;
   }
-  
-  .ml5 .ampersand {
+
+  ._ml5 ._line {
+    width: 4em;
+    border-radius: 2em;
+    height: 4.5px;
+    opacity: 0;
+  }
+
+  .ml5 .ampersand, ._ml5 ._ampersand {
     font-family: Baskerville, "EB Garamond", serif;
     font-style: italic;
     font-weight: 400;
@@ -207,8 +221,8 @@ page-home {
     margin-right: -0.1em;
     margin-left: -0.1em;
   }
-  
-  .ml5 .letters {
+
+  .ml5 .letters, ._ml5 ._letters {
     display: inline-block;
     opacity: 0;
     text-align: left;
@@ -219,7 +233,7 @@ page-home {
     }
   }
 
-  
+
 
 
 
@@ -248,7 +262,7 @@ page-home {
     // margin-top: -12vh;
     // transform-origin: 50% 100%;
     background: white;
-  }  
+  }
 
 
 }

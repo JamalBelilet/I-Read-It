@@ -140,16 +140,20 @@ page-reviewer-info-modal {
 
     ion-row {
       ion-row , h3{
-        padding: 0;
+        padding: 0 3em 0 3em;
         margin: 0;
+
       }
       ion-icon{
+        padding: 0 .2em 0 .2em;
         font-size: 2em;
+
       }
       p {
         font-weight: lighter;
         font-size: 1.1em;
-        padding: 0;
+
+        // padding: 0 .5em 0 .5em;
         margin: 0;
       }
     }

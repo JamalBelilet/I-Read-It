@@ -1,27 +1,25 @@
-import {Component, ViewChild} from '@angular/core';
-import {Nav, Platform, ModalController, AlertController} from 'ionic-angular';
-import {StatusBar} from '@ionic-native/status-bar';
-import {SplashScreen} from '@ionic-native/splash-screen';
+import { Component, ViewChild } from "@angular/core";
+import { Nav, Platform, ModalController, AlertController } from "ionic-angular";
+import { StatusBar } from "@ionic-native/status-bar";
+import { SplashScreen } from "@ionic-native/splash-screen";
 
-import {HomePage} from '../pages/home/home';
+import { HomePage } from "../pages/home/home";
 
-
-import {MyHotPortionsModalPage} from '../pages/my-hot-portions-modal/my-hot-portions-modal';
-import {MyReviewsModalPage} from '../pages/my-reviews-modal/my-reviews-modal';
-import {SavedReviewsModalPage} from '../pages/saved-reviews-modal/saved-reviews-modal';
-import {SavedPortionsModalPage} from '../pages/saved-portions-modal/saved-portions-modal';
-import {FollowersModalPage} from '../pages/followers-modal/followers-modal';
-import {FollowingModalPage} from '../pages/following-modal/following-modal';
-import {ProfilesServiceProvider} from '../providers/profiles-service/profiles-service';
-import {ReviewsServiceProvider} from '../providers/reviews-service/reviews-service';
-import {AuthenticationServiceProvider} from '../providers/authentication-service/authentication-service';
-import {ReviewersServiceProvider} from '../providers/reviewers-service/reviewers-service';
-import {ReviewerInfoModalPage} from '../pages/reviewer-info-modal/reviewer-info-modal';
-import {ReadingWatcherPage} from '../pages/reading-watcher/reading-watcher';
-
+import { MyHotPortionsModalPage } from "../pages/my-hot-portions-modal/my-hot-portions-modal";
+import { MyReviewsModalPage } from "../pages/my-reviews-modal/my-reviews-modal";
+import { SavedReviewsModalPage } from "../pages/saved-reviews-modal/saved-reviews-modal";
+import { SavedPortionsModalPage } from "../pages/saved-portions-modal/saved-portions-modal";
+import { FollowersModalPage } from "../pages/followers-modal/followers-modal";
+import { FollowingModalPage } from "../pages/following-modal/following-modal";
+import { ProfilesServiceProvider } from "../providers/profiles-service/profiles-service";
+import { ReviewsServiceProvider } from "../providers/reviews-service/reviews-service";
+import { AuthenticationServiceProvider } from "../providers/authentication-service/authentication-service";
+import { ReviewersServiceProvider } from "../providers/reviewers-service/reviewers-service";
+import { ReviewerInfoModalPage } from "../pages/reviewer-info-modal/reviewer-info-modal";
+import { ReadingWatcherPage } from "../pages/reading-watcher/reading-watcher";
 
 @Component({
-  templateUrl: 'app.html'
+  templateUrl: "app.html"
 })
 export class MyApp {
   reviewer;
@@ -30,22 +28,21 @@ export class MyApp {
 
   rootPage: any = HomePage;
 
-
-  constructor(private reviewersService: ReviewersServiceProvider,
-              private authService: AuthenticationServiceProvider,
-              private reviewsService: ReviewsServiceProvider,
-              private profilesService: ProfilesServiceProvider,
-              private alertController: AlertController,
-              private modal: ModalController,
-              public platform: Platform,
-              public statusBar: StatusBar,
-              public splashScreen: SplashScreen) {
-
+  constructor(
+    private reviewersService: ReviewersServiceProvider,
+    private authService: AuthenticationServiceProvider,
+    private reviewsService: ReviewsServiceProvider,
+    private profilesService: ProfilesServiceProvider,
+    private alertController: AlertController,
+    private modal: ModalController,
+    public platform: Platform,
+    public statusBar: StatusBar,
+    public splashScreen: SplashScreen
+  ) {
     this.initializeApp();
-    this.reviewer = profilesService.getReviewer().subscribe(
-      reviewer => this.reviewer = reviewer
-    );
-
+    this.reviewer = profilesService
+      .getReviewer()
+      .subscribe(reviewer => (this.reviewer = reviewer));
   }
 
   initializeApp() {
@@ -64,21 +61,24 @@ export class MyApp {
   }
 
   openModel() {
-    console.log('this is our model coming ');
+    console.log("this is our model coming ");
     this.modal.create(HomePage);
-
   }
 
   getMyReviews() {
     // let _ = this._getMyReviews();
     let m_reviews$ = this.reviewsService.getReviewerReviews(this.reviewer.$key);
-    console.log('meaaaaaaaaaaaaaaaaaaaaw', m_reviews$);
-    let myReviewsModal = this.modal.create(MyReviewsModalPage, {m_reviews$: m_reviews$});
+    console.log("meaaaaaaaaaaaaaaaaaaaaw", m_reviews$);
+    let myReviewsModal = this.modal.create(MyReviewsModalPage, {
+      m_reviews$: m_reviews$
+    });
     myReviewsModal.present();
   }
 
   getSavedReviews() {
-    let savedReviewsModal = this.modal.create(SavedReviewsModalPage, {reviewerUsername: this.reviewer.username});
+    let savedReviewsModal = this.modal.create(SavedReviewsModalPage, {
+      reviewerUsername: this.reviewer.username
+    });
     savedReviewsModal.present();
   }
 
@@ -93,31 +93,37 @@ export class MyApp {
   }
 
   getFollowers() {
-    let followersModal = this.modal.create(FollowersModalPage, {followers: this.reviewersService.getReviewersFollowers(this.reviewer.$key)});
+    let followersModal = this.modal.create(FollowersModalPage, {
+      followers: this.reviewersService.getReviewersFollowers(this.reviewer.$key)
+    });
     followersModal.present();
   }
 
   getFollowing() {
-    let followingModal = this.modal.create(FollowingModalPage, {following: this.reviewersService.getReviewersFollowing(this.reviewer.$key)});
+    let followingModal = this.modal.create(FollowingModalPage, {
+      following: this.reviewersService.getReviewersFollowing(this.reviewer.$key)
+    });
     followingModal.present();
   }
 
   getReviewerInfoModel() {
-    let reviewerInfoModel = this.modal.create(ReviewerInfoModalPage, {reviewer: this.reviewer});
+    let reviewerInfoModel = this.modal.create(ReviewerInfoModalPage, {
+      reviewer: this.reviewer
+    });
     reviewerInfoModel.present();
   }
 
   signout() {
     let alert = this.alertController.create({
-      title: 'log out',
-      message: 'Are you sure you want to logout',
+      title: "log out",
+      message: "Are you sure you want to logout",
       buttons: [
         {
-          text: 'Cancel',
-          role: 'cancel'
+          text: "Cancel",
+          role: "cancel"
         },
         {
-          text: 'yes',
+          text: "yes",
           handler: () => {
             this.authService.signout();
             this.nav.setRoot(HomePage);
@@ -127,6 +133,4 @@ export class MyApp {
     });
     alert.present();
   }
-
-
 }

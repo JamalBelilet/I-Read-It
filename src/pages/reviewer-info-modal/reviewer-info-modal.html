@@ -60,8 +60,8 @@
     </div>
   </ion-row>
 
-  <ion-row class="reviewer-social-apps">
-    <ion-col no-lines *ngFor="let _social of reviewer.social">
+  <ion-row class="reviewer-social-apps" justify-content-around>
+    <ion-col col-auto no-lines *ngFor="let _social of reviewer.social">
 
         <ion-row justify-content-start align-items-start>
           <ion-icon name="logo-{{_social.app}}" ></ion-icon>
@@ -75,7 +75,7 @@
 
   <ion-row>
 
-    <ion-row style="width: 100%">
+    <ion-row style="width: 100%; margin: 0 1em;">
       <ion-segment [(ngModel)]="segmentOption">
         <ion-segment-button value="reviews" style="width: 30%">
           reviews
