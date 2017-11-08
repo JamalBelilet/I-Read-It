@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
@@ -48,6 +49,10 @@ import { ReviewersServiceProvider } from '../providers/reviewers-service/reviewe
 import { ImagePicker } from '@ionic-native/image-picker';
 import {ReviewerInfoModalPage} from '../pages/reviewer-info-modal/reviewer-info-modal';
 import {ReviewHolderComponent} from '../components/review-holder/review-holder';
+import {ConsoleLogPage} from '../pages/console-log/console-log';
+import {ReadingWatcherPage} from '../pages/reading-watcher/reading-watcher';
+
+
 
 var firebaseConfig = {
   apiKey: "AIzaSyC2Z-i-oWam_Yt2H3XL8n-bRJIuZr8Ow6M",
@@ -80,6 +85,8 @@ var firebaseConfig = {
     NotificationsPage,
     SchoolPage,
     ReviewerInfoModalPage,
+    ReadingWatcherPage,
+    ConsoleLogPage,
     ReviewHolderComponent
 
 
@@ -88,10 +95,11 @@ var firebaseConfig = {
     AngularFireAuthModule,
     HttpModule,
     BrowserModule,
+    BrowserAnimationsModule,    
     IonicModule.forRoot(MyApp, {
       platforms: {
         ios: {
-          statusbarPadding: true
+          // statusbarPadding: true
         }
       }
     }),
@@ -119,7 +127,9 @@ var firebaseConfig = {
     FollowingModalPage,
     NotificationsPage,
     SchoolPage,
-    ReviewerInfoModalPage
+    ReviewerInfoModalPage,
+    ReadingWatcherPage,
+    ConsoleLogPage
   ],
   providers: [
     ImagePicker,

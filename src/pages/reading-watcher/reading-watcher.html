@@ -1,0 +1,92 @@
+<!--
+  Generated template for the ReadingWatcherPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <!--<ion-navbar>-->
+  <!--</ion-navbar>-->
+
+  <ion-toolbar>
+
+    <ion-buttons left>
+
+      <button menuToggle ion-button icon-only color="royal">
+        <img src="assets/img/jamal.jpg" alt="jamal"  style="max-width: 1.8em; border-radius: 50%">
+      </button>
+    </ion-buttons>
+
+    
+    <ion-title *ngIf="discuss; else _$">East India <br><em><small>by Aususs Ridetis</small></em></ion-title>
+    <ng-template #_$>
+      <ion-searchbar
+        mode="ios"
+        align-self-end
+        col-auto
+        animated="true">
+      </ion-searchbar>
+    </ng-template>
+
+    <ion-buttons end>
+      <button *ngIf="discuss; else $_$" ion-button icon-only color="royal" (click)="getWatcherApps()">
+        <ion-icon name="apps"></ion-icon>
+      </button>
+      <ng-template #$_$>
+        <button ion-button icon-only color="royal" (click)="getWatcherApps()">
+          <ion-icon name="add"></ion-icon>
+        </button>
+      </ng-template>
+    </ion-buttons>
+
+  </ion-toolbar>
+
+</ion-header>
+
+
+
+<ion-content>
+
+  <ion-list no-lines>
+    <div *ngIf="discuss; else _">
+        <ion-item *ngFor="let state of readingState">
+            <p *ngIf="state.reader === mainReader" item-start style=" border-radius: 5px; color: #0d0d0d; max-width: 65%; padding: 1em 1em; background-color: #ececec">{{state.text}} <br><b><small>—{{state.reader}}</small></b></p>
+            <p *ngIf="state.reader !== mainReader" item-end style=" border-radius: 5px;  color: #0d0d0d; text-align: end ;max-width: 65%; padding: 1em 1em; background-color: #ededed73">{{state.text}} <br><b><small>—{{state.reader}}</small></b></p>
+      
+          </ion-item>
+      
+          <ion-item style=" border-radius: 5px; margin: 1em; width: 90%; border: .5px dashed black ; padding: 0;">
+            <ion-label floating style="color: #666666; padding: 0 0 0 1em; ">hunger, riddle, and death.</ion-label>
+            <ion-textarea  name="quote"></ion-textarea>
+            <button style="font-size: 1em; margin-top: 2em;" item-end ion-button icon-only clear >
+              <ion-icon name="arrow-forward"></ion-icon>
+            </button>
+          </ion-item>
+    </div>
+
+    <ng-template #_>
+
+      <div style="display: flex; flex-flow: wrap row">
+          <ion-card  class="_discuss_item" *ngFor="let _discuss of __discuss">
+              <ion-card-content>
+                  <h3>{{_discuss.reader}}</h3>
+                  <p>{{_discuss.book}}</p>
+                  <p style="font-size: 90%; margin-top: 1em;">{{_discuss.lastText | slice:0:75}}</p>
+              </ion-card-content>
+            </ion-card>
+      </div>
+    </ng-template>
+
+  </ion-list>
+
+  <!--<div class="app-grid">-->
+    <!--<div></div>-->
+    <!--<div></div>-->
+    <!--<div></div>-->
+    <!--<div></div>-->
+
+  <!--</div>-->
+
+
+</ion-content>

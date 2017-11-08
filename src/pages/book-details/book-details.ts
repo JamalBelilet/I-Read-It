@@ -9,6 +9,7 @@ import {MoreBookPopoverPage} from '../more-book-popover/more-book-popover';
 import { ReviewerProfilePopoverPage } from '../reviewer-profile-popover/reviewer-profile-popover';
 import {ReviewersServiceProvider} from '../../providers/reviewers-service/reviewers-service';
 import {AuthenticationServiceProvider} from '../../providers/authentication-service/authentication-service';
+import {ConsoleLogPage} from '../console-log/console-log';
 
 /**
  * Generated class for the BookDetailsPage page.

@@ -9,6 +9,7 @@ import {AuthenticationServiceProvider} from '../../providers/authentication-serv
 import {Observable} from 'rxjs/Observable';
 import {ReviewerInfoModalPage} from '../reviewer-info-modal/reviewer-info-modal';
 import {ProfilesServiceProvider} from '../../providers/profiles-service/profiles-service';
+import {ConsoleLogPage} from '../console-log/console-log';
 
 /**
  * Generated class for the SearchPage page.
@@ -55,6 +56,10 @@ export class SearchPage {
     this.navCtrl.push(ReviewerInfoModalPage, {reviewer: reviewer});
   }
 
+
+  consoleLog( book ) {
+    this.navCtrl.push(ConsoleLogPage, {console_log_params: JSON.stringify(book)})
+  }
 
 
 

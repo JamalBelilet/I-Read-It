@@ -1,0 +1,496 @@
+{
+  "reviewer_followers" : {
+    "TczZ23J8c3NiDnwTBOGRVhx4zCO2" : {
+      "-KvHyvm6goTAOj1Gq8iz" : {
+        "followers" : "0",
+        "following" : "1",
+        "mail" : "solat_strength@gmail.com",
+        "name" : "Solat Strength",
+        "username" : "solat_strength"
+      }
+    }
+  },
+  "reviewer_following" : {
+    "-KvHyvm6goTAOj1Gq8iz" : {
+      "KvHbsd6goGER2sq32v" : {
+        "followers" : "1",
+        "following" : "3",
+        "key" : "TczZ23J8c3NiDnwTBOGRVhx4zCO2",
+        "mail" : "df_belilet@esi.dz",
+        "name" : "jamal belilet",
+        "username" : "jamal"
+      }
+    },
+    "TczZ23J8c3NiDnwTBOGRVhx4zCO2" : {
+      "-KvIJx0VVR48W07KHUi2" : {
+        "followers" : "1",
+        "following" : "0",
+        "key" : "-KvHyvm4U4jOiWaCeGte",
+        "mail" : "alex_nelson@gmail.com",
+        "name" : "Alex Nelson",
+        "username" : "alex_nelson"
+      },
+      "-KvIJx0bJlla5RmVOEpO" : {
+        "followers" : "1",
+        "following" : "0",
+        "key" : "-KvHyvm4U4jOiWaCeGtf",
+        "mail" : "endurance_greed@gmail.com",
+        "name" : "Endurance Greed",
+        "username" : "endurance_greed"
+      },
+      "-KvIJx0cuRc37XLq46D2" : {
+        "followers" : "1",
+        "following" : "0",
+        "key" : "-KvHyvm6goTAOj1Gq8j-",
+        "mail" : "df_belilet@gmail.com",
+        "name" : "Esolat Scoura",
+        "username" : "esolat_scoura"
+      }
+    }
+  },
+  "reviewer_reviews" : {
+    "-KvHyvlzdUatm6oyQd0N" : [ {
+      "bookDetails" : {
+        "author" : "Parss Resistere",
+        "cover" : "barcasscadunt.png",
+        "title" : "BARCASS CADUNT"
+      },
+      "key" : "-KvIQk1vbNV86AhJJSbL"
+    } ],
+    "-KvHyvm4U4jOiWaCeGte" : [ {
+      "bookDetails" : {
+        "author" : "Charlote Bronte",
+        "cover" : "theprofessor.png",
+        "title" : "The Profissor"
+      },
+      "key" : "-KvIQk22OfdQjNJaUGNN"
+    } ],
+    "-KvHyvm4U4jOiWaCeGtf" : [ {
+      "bookDetails" : {
+        "author" : "Pedantically Teleporter",
+        "cover" : "Wiselytranslateatransformator.png",
+        "title" : "Wisely translate a transformator"
+      },
+      "key" : "-KvIQk24ARH_ZI5H7dJr"
+    } ],
+    "-KvHyvm5UxR1KN9WxFko" : [ {
+      "bookDetails" : {
+        "author" : "Charlote Bronte",
+        "cover" : "theprofessor.png",
+        "title" : "The Profissor"
+      },
+      "key" : "-KvIQk22OfdQjNJaUGNN"
+    } ],
+    "-KvHyvm5UxR1KN9WxFkp" : [ {
+      "bookDetails" : {
+        "author" : "Adobo Sauce",
+        "cover" : "desireseashell.png",
+        "title" : "Desire Seashell"
+      },
+      "key" : "-KvIQk25Bk5Tn-zZjSD9"
+    } ],
+    "-KvHyvm6goTAOj1Gq8iz" : [ {
+      "bookDetails" : {
+        "author" : "Pedantically Teleporter",
+        "cover" : "Wiselytranslateatransformator.png",
+        "title" : "Wisely translate a transformator"
+      },
+      "key" : "-KvIQk24ARH_ZI5H7dJr"
+    } ],
+    "-KvHyvm6goTAOj1Gq8j-" : [ {
+      "bookDetails" : {
+        "author" : "Adobo Sauce",
+        "cover" : "desireseashell.png",
+        "title" : "Desire Seashell"
+      },
+      "key" : "-KvIQk25Bk5Tn-zZjSD9"
+    } ],
+    "TczZ23J8c3NiDnwTBOGRVhx4zCO2" : {
+      "0" : {
+        "bookDetails" : {
+          "author" : "Parss Resistere",
+          "cover" : "barcasscadunt.png",
+          "title" : "BARCASS CADUNT"
+        },
+        "key" : "-KvIQk1vbNV86AhJJSbL"
+      },
+      "1" : {
+        "key" : "-Kvd50RwOOFjkPsCkmkN"
+      },
+      "-Kvd0fRWHQWnmjEgiRdy" : {
+        "key" : "-Kvd0fGQXnXQcFwVwedA"
+      },
+      "-KvdqQdpeu5U07y_zlTd" : {
+        "key" : "-KvdqQXA0hMsOtyr82rM"
+      },
+      "-Kvfqe4EtgOZ5Nvtb5cr" : {
+        "key" : "-Kvfqdq6My36Y6_nuyNR"
+      }
+    }
+  },
+  "reviewer_saved_reviews" : {
+    "TczZ23J8c3NiDnwTBOGRVhx4zCO2" : {
+      "-KvnuLdAomLvk65dnxKs" : {
+        "key" : "-KvIQk22OfdQjNJaUGNN"
+      },
+      "-KvnvGwc-XY_cI2q5ECW" : {
+        "key" : "-KvIQk1vbNV86AhJJSbL"
+      },
+      "-KvnyF8j6Q9BzykBc1x2" : {
+        "key" : "-KvIQk24ARH_ZI5H7dJr"
+      },
+      "-KvnyNgucgQKAHrUkA6v" : {
+        "key" : "-KvIQk25Bk5Tn-zZjSD9"
+      }
+    }
+  },
+  "reviewers" : {
+    "-KvHyvlzdUatm6oyQd0N" : {
+      "followers" : "0",
+      "following" : "0",
+      "mail" : "ribika_goes@gmail.com",
+      "name" : "Ribika Goes",
+      "social" : [ {
+        "app" : "facebook",
+        "name" : "ribika_goes"
+      }, {
+        "app" : "twitter",
+        "name" : "ribika_goes"
+      }, {
+        "app" : "instagram",
+        "name" : "ribika_goes"
+      } ],
+      "username" : "ribika_goes"
+    },
+    "-KvHyvm4U4jOiWaCeGte" : {
+      "followers" : "1",
+      "following" : "0",
+      "mail" : "alex_nelson@gmail.com",
+      "name" : "Alex Nelson",
+      "social" : [ {
+        "app" : "facebook",
+        "name" : "alex_nelson"
+      }, {
+        "app" : "twitter",
+        "name" : "alex_nelson"
+      }, {
+        "app" : "instagram",
+        "name" : "alex_nelson"
+      } ],
+      "username" : "alex_nelson"
+    },
+    "-KvHyvm4U4jOiWaCeGtf" : {
+      "followers" : "1",
+      "following" : "0",
+      "mail" : "endurance_greed@gmail.com",
+      "name" : "Endurance Greed",
+      "social" : [ {
+        "app" : "facebook",
+        "name" : "endurance_greed"
+      }, {
+        "app" : "twitter",
+        "name" : "endurance_greed"
+      }, {
+        "app" : "instagram",
+        "name" : "endurance_greed"
+      } ],
+      "username" : "endurance_greed"
+    },
+    "-KvHyvm5UxR1KN9WxFko" : {
+      "followers" : "0",
+      "following" : "0",
+      "mail" : "trevor_hacen@gmail.com",
+      "name" : "Trevor Hasen",
+      "social" : [ {
+        "app" : "facebook",
+        "name" : "trevor_hacen"
+      }, {
+        "app" : "twitter",
+        "name" : "trevor_hacen"
+      }, {
+        "app" : "instagram",
+        "name" : "trevor_hacen"
+      } ],
+      "username" : "trevor_hacen"
+    },
+    "-KvHyvm5UxR1KN9WxFkp" : {
+      "followers" : "0",
+      "following" : "0",
+      "mail" : "hinato_treasure@gmail.com",
+      "name" : "Hinato Treasure",
+      "social" : [ {
+        "app" : "facebook",
+        "name" : "hinato_treasure"
+      }, {
+        "app" : "twitter",
+        "name" : "hinato_treasure"
+      }, {
+        "app" : "instagram",
+        "name" : "hinato_treasure"
+      } ],
+      "username" : "hinato_treasure"
+    },
+    "-KvHyvm6goTAOj1Gq8iz" : {
+      "followers" : "0",
+      "following" : "1",
+      "mail" : "solat_strength@gmail.com",
+      "name" : "Solat Strength",
+      "social" : [ {
+        "app" : "facebook",
+        "name" : "solat_strength"
+      }, {
+        "app" : "twitter",
+        "name" : "solat_strength"
+      }, {
+        "app" : "instagram",
+        "name" : "solat_strength"
+      } ],
+      "username" : "solat_strength"
+    },
+    "-KvHyvm6goTAOj1Gq8j-" : {
+      "followers" : "1",
+      "following" : "0",
+      "mail" : "df_belilet@gmail.com",
+      "name" : "Esolat Scoura",
+      "social" : [ {
+        "app" : "facebook",
+        "name" : "esolat_scoura"
+      }, {
+        "app" : "twitter",
+        "name" : "esolat_scoura"
+      }, {
+        "app" : "instagram",
+        "name" : "esolat_scoura"
+      } ],
+      "username" : "esolat_scoura"
+    },
+    "TczZ23J8c3NiDnwTBOGRVhx4zCO2" : {
+      "followers" : 1,
+      "following" : 3,
+      "mail" : "fd_belilet@esi.dz",
+      "myreviews" : 5,
+      "name" : "Belilet Djamaleddine",
+      "social" : [ {
+        "app" : "facebook",
+        "name" : "jamal"
+      }, {
+        "app" : "twitter",
+        "name" : "jamal"
+      }, {
+        "app" : "instagram",
+        "name" : "jamal"
+      } ],
+      "username" : "jamal"
+    }
+  },
+  "reviews" : {
+    "-KvIQk1vbNV86AhJJSbL" : {
+      "bookDetails" : {
+        "author" : "Parss Resistere",
+        "cover" : "barcasscadunt.png",
+        "title" : "BARCASS CADUNT"
+      },
+      "portions" : [ {
+        "_s" : "Stigma at the colony was the understanding of resistance, accelerated to a human sonic shower.",
+        "copies" : 50,
+        "loves" : 65,
+        "shares" : 48
+      }, {
+        "_s" : "Pressure at the solar sphere that is when bare pathways experiment.",
+        "copies" : 45,
+        "loves" : 95,
+        "shares" : 54
+      }, {
+        "_s" : "This history has only been questioned by a cloudy ship. ",
+        "copies" : 15,
+        "loves" : 65,
+        "shares" : 84
+      } ],
+      "resume" : "Omnias sunt terrors de noster ventus. Sunt eposes anhelare noster, magnum guttuses. Assimilatios sunt nutrixs de azureus galatae. Est gratis rector, cesaris. Capio prareres, tanquam bassus axona. Ubi est placidus fermium? Magnum, festus parmas mechanice amor de noster, albus zeta. Fidelis competitions ducunt ad exsul\"",
+      "reviewers" : [ {
+        "key" : "TczZ23J8c3NiDnwTBOGRVhx4zCO2",
+        "name" : "Belilet Djamaleddine",
+        "username" : "jamal"
+      }, {
+        "key" : "-KvHyvlzdUatm6oyQd0N",
+        "name" : "Ribika Goes",
+        "username" : "ribika_goes"
+      } ]
+    },
+    "-KvIQk22OfdQjNJaUGNN" : {
+      "bookDetails" : {
+        "author" : "Charlote Bronte",
+        "cover" : "theprofessor.png",
+        "title" : "The Profissor"
+      },
+      "portions" : [ {
+        "_s" : "Chambray Carles Terry Gibson balls plaid wolf. Disrupt fashion axe 90's quinoa +1 Neutra.",
+        "copies" : 100,
+        "loves" : 156,
+        "shares" : 85
+      }, {
+        "_s" : "Irony ethnic ennui McSweeney's, semiotics small batch squid direct trade.",
+        "copies" : 85,
+        "loves" : 50,
+        "shares" : 10
+      }, {
+        "_s" : "Readymade salvia Echo Park scenester. Farm-to-table selvage small batch swag",
+        "copies" : 181,
+        "loves" : 215,
+        "shares" : 120
+      } ],
+      "resume" : "Where is the huge girl? When the transporter warps for captain's quarters, all kahlesses avoid chemical, unrelated transformators. Dead understandings lead to the stigma!",
+      "reviewers" : [ {
+        "key" : "-KvHyvm5UxR1KN9WxFko",
+        "name" : "Trevor Hasen",
+        "username" : "trevor_hacen"
+      }, {
+        "key" : "-KvHyvm4U4jOiWaCeGte",
+        "name" : "Alex Nelson",
+        "username" : "alex_nelson"
+      } ]
+    },
+    "-KvIQk24ARH_ZI5H7dJr" : {
+      "bookDetails" : {
+        "author" : "Pedantically Teleporter",
+        "cover" : "Wiselytranslateatransformator.png",
+        "title" : "Wisely translate a transformator"
+      },
+      "portions" : [ {
+        "_s" : "All cannibals mark undead, swashbuckling seas. Furners are the gibbets of the mighty horror.",
+        "copies" : 15,
+        "loves" : 15,
+        "shares" : 95
+      }, {
+        "_s" : "The scabbard scrapes with yellow fever, haul the pacific ocean before it rises.",
+        "copies" : 150,
+        "loves" : 150,
+        "shares" : 51
+      }, {
+        "_s" : "The sailor views with love, rob the reef until it rises.",
+        "copies" : 845,
+        "loves" : 215,
+        "shares" : 541
+      } ],
+      "resume" : "How small. You fire like a comrade. Yuck, evil amnesty! C'mon, yer not sailing me without a death! Scrawny pestilences lead to the hunger!",
+      "reviewers" : [ {
+        "key" : "-KvHyvm4U4jOiWaCeGtf",
+        "name" : "Endurance Greed",
+        "username" : "endurance_greed"
+      }, {
+        "key" : "-KvHyvm6goTAOj1Gq8iz",
+        "name" : "Solat Strength",
+        "username" : "solat_strength"
+      } ]
+    },
+    "-KvIQk25Bk5Tn-zZjSD9" : {
+      "bookDetails" : {
+        "author" : "Adobo Sauce",
+        "cover" : "desireseashell.png",
+        "title" : "Desire Seashell"
+      },
+      "portions" : [ {
+        "_s" : "Strawberries can be covered with sun-dried bok choy, also try marinateing the chili with joghurt.",
+        "copies" : 152,
+        "loves" : 84,
+        "shares" : 145
+      }, {
+        "_s" : "The shore vandalizes with power, sail the captain's quarters before it waves.",
+        "copies" : 650,
+        "loves" : 250,
+        "shares" : 520
+      }, {
+        "_s" : "The sun blows with treasure, fire the brig until it laughs. ",
+        "copies" : 145,
+        "loves" : 352,
+        "shares" : 215
+      } ],
+      "resume" : "Try shredding frittata garnished with gravy, blended with mustard. Combine squid, tuna and walnut. garnish with muddy basil and serve flattened with peanuts. Enjoy! ",
+      "reviewers" : [ {
+        "key" : "-KvHyvm5UxR1KN9WxFkp",
+        "name" : "Hinato Treasure",
+        "username" : "hinato_treasure"
+      }, {
+        "key" : "-KvHyvm6goTAOj1Gq8j-",
+        "name" : "Esolat Scoura",
+        "username" : "esolat_scoura"
+      } ]
+    },
+    "-Kvd0fGQXnXQcFwVwedA" : {
+      "bookDetails" : {
+        "author" : "Djamaleddine Belilet",
+        "cover" : "",
+        "title" : "Mekki's ESI Life"
+      },
+      "portions" : [ {
+        "_s" : "Mekki was that guy that you say every night i will be tomorrow",
+        "copies" : 0,
+        "loves" : 0,
+        "shares" : 0
+      } ],
+      "resume" : "In Mekki's ESI Life Djamaleddine Have been listing almost every daily bases activities Mekki was doing withing his career as Computer Sience Student at ESI ALG",
+      "reviewers" : [ {
+        "key" : "TczZ23J8c3NiDnwTBOGRVhx4zCO2",
+        "name" : "Belilet Djamaleddine",
+        "username" : "jamal"
+      } ]
+    },
+    "-Kvd50RwOOFjkPsCkmkN" : {
+      "bookDetails" : {
+        "author" : "Belilet Djamaleddine",
+        "cover" : "",
+        "title" : "Ma Aicha"
+      },
+      "portions" : [ {
+        "_s" : "I remember that day when she left home to let us khnow what she means for ~",
+        "copies" : 0,
+        "loves" : 0,
+        "shares" : 0
+      } ],
+      "resume" : "Ma Aicha is life style book that cover a mother life style from his son",
+      "reviewers" : [ {
+        "key" : "TczZ23J8c3NiDnwTBOGRVhx4zCO2",
+        "name" : "Belilet Djamaleddine",
+        "username" : "jamal"
+      } ]
+    },
+    "-KvdqQXA0hMsOtyr82rM" : {
+      "bookDetails" : {
+        "author" : "Belilet Djamaleddine",
+        "cover" : "",
+        "title" : "The 1:01 Knight"
+      },
+      "portions" : [ {
+        "_s" : "and she between the Stars street and his house ",
+        "copies" : 0,
+        "loves" : 0,
+        "shares" : 0
+      } ],
+      "resume" : "The 1:01 Knight is a series of polise stories writen by Djamaleddine, it will take any rader to a hight level of doubt",
+      "reviewers" : [ {
+        "key" : "TczZ23J8c3NiDnwTBOGRVhx4zCO2",
+        "name" : "Belilet Djamaleddine",
+        "username" : "jamal"
+      } ]
+    },
+    "-Kvfqdq6My36Y6_nuyNR" : {
+      "bookDetails" : {
+        "author" : "Moumed",
+        "cover" : "",
+        "title" : "Twilight"
+      },
+      "portions" : [ {
+        "_s" : "Sur Le bord de la riviere Piedra Je me suis assise Et J pleure",
+        "copies" : 0,
+        "loves" : 0,
+        "shares" : 0
+      } ],
+      "resume" : "Nothing is better than a truely Vampire Love Story",
+      "reviewers" : [ {
+        "key" : "TczZ23J8c3NiDnwTBOGRVhx4zCO2",
+        "name" : "Belilet Djamaleddine",
+        "username" : "jamal"
+      } ]
+    }
+  }
+}

@@ -6,6 +6,7 @@ import { LovePage } from '../love/love';
 import { SearchPage } from '../search/search';
 import {NotificationsPage} from '../notifications/notifications';
 import {SchoolPage} from '../school/school';
+import {ReadingWatcherPage} from '../reading-watcher/reading-watcher';
 
 /*
  Generated class for the Tabs page.
@@ -23,7 +24,7 @@ export class TabsPage {
   // should be each tab's root Page
   tab2Root: any = BooksPage;
   tab3Root: any = NotificationsPage;
-  tab4Root: any = SchoolPage;
+  tab4Root: any = ReadingWatcherPage;
   tab5Root: any = SearchPage;
 
   constructor() {

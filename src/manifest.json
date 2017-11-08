@@ -1,8 +1,10 @@
 {
-  "name": "Ionic",
-  "short_name": "Ionic",
+  "name": "jBooks",
+  "short_name": "jBooks",
   "start_url": "index.html",
   "display": "standalone",
+  "orientation": "portrait",
+  "scope": "/",
   "icons": [{
     "src": "assets/imgs/logo.png",
     "sizes": "512x512",
@@ -11,3 +13,4 @@
   "background_color": "#4e8ef7",
   "theme_color": "#4e8ef7"
 }
+

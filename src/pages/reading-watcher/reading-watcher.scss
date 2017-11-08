@@ -1,0 +1,36 @@
+page-reading-watcher {
+
+  .app-grid {
+    height: 75vh;
+    width: 95%;
+    margin: 0 2.5%;
+    background-color: #b2b2b266;
+    border-radius: 5px;
+    position: absolute;
+    top: 2vh;
+    left: 0;
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: center;
+
+    &>div {
+      width: 45%;
+      margin: 2%;
+      height: 15vh;
+      background-color: #12222b;
+    }
+  }
+
+  ._discuss_item {
+    width: 45%;
+    margin: 2.5%;
+
+    h3 {
+      font-size: 1.5em;
+    }
+
+    p {
+      font-size: 1.2em;
+    }
+  }
+}

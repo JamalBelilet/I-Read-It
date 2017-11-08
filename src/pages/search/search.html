@@ -33,18 +33,21 @@
       books
     </ion-list-header>
     <ion-scroll scrollX>
-      <ion-card class="scroll-item" *ngFor="let book of books$ | async">
-        <ion-card-content>
-          <!--<ion-row>-->
-            <!--<ion-col style="max-width: 6em;">-->
-              <!--<img src="assets/img/{{book.cover}}.png" style="width: 6em;">-->
-            <!--</ion-col>-->
-            <!--<ion-col text-wrap justify-content-between>-->
-              <!--<h3>{{book.title}}</h3>-->
-              <!--<h5>by {{book.author}}</h5>-->
-              <h5 class="reviews-badge"> <ion-badge>{{(book.reviewsCounter$ )}}</ion-badge></h5>
-            <!--</ion-col>-->
-          <!--</ion-row>-->
+      <ion-card class="scroll-item " *ngFor="let book of books$ | async">
+        <ion-card-content (click)="consoleLog(book)">
+          <ion-row>
+            <ion-col style="max-width: 6em;">
+              <img src="assets/img/{{book.bookDetails.cover}}" alt="" style="width: 6em;">
+            </ion-col>
+            <ion-col text-wrap justify-content-between>
+              <h3>{{book.bookDetails.title}}</h3>
+              <h5>by {{book.bookDetails.author}}</h5>
+
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <h5 class="reviews-badge"> <ion-badge>1 review(s)</ion-badge></h5>
+          </ion-row>
         </ion-card-content>
       </ion-card>
     </ion-scroll>

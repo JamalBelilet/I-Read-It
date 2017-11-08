@@ -22,27 +22,49 @@
 <ion-content>
 
   <ion-slides pager (ionSlideDidChange)="SlidesDidChanged()">
+
+    <!-- <ion-slide>
+      <div class="_body">
+          <div class="wrapper"></div>          
+      </div>
+    </ion-slide> -->
+    
+
     <ion-slide>
       <h5>DJAMALEDDINE BELILET <span>j books</span></h5>
-      <h2>NO TWO PERSONS EVER READ THE SAME BOOK<span>Edmund Wilson</span></h2>
+      
+      <p class="ml5">
+        <span class="text-wrapper">
+          <span class="line line1"></span>
+          <!-- <span class="letters ampersand">"</span>           -->
+          <span class="letters letters-left"> NO TWO PERSONS EVER READ THE SAME BOOK</span>
+          <span class="letters letters-right">Edmund Wilson</span>
+          <span class="line line2"></span>
+        </span>
+      </p>
+
     </ion-slide>
+
     <ion-slide>
       <h5 class="h-portions">HOT PORTIONS</h5>
       <div class="portions">
         <p>There is some good in this world, and it's worth fighting for.<span>J.R.R. Tolkien, The Two Towers</span></p>
-        <!--<p>Well-behaved women seldom make history.<span>Laurel Thatcher Ulrich, Well-behaved Women Seldom Make History</span></p>-->
+        <p>Well-behaved women seldom make history.<span>Laurel Thatcher Ulrich, Well-behaved Women Seldom Make History</span></p>
         <p>It is better to be hated for what you are than to be loved for what you are not.<span>Andre Gide, Autumn Leaves</span></p>
         <p>Who, being loved, is poor?<span>Oscar Wild, A Woman of No Importance</span></p>
         <p>Every human life is worth the same, and worth saving.<span>J.K. Rowling, Harry Potter and the Deathly Hallows</span></p>
       </div>
     </ion-slide>
+
     <ion-slide>
+
       <div class="logo">
         <img src="./assets/icon/jBooks.svg" alt="jbooks logo">
       </div>
+
       <div class="login">
         <ion-row>
-          <ion-input type="text" placeholder="Mail" [(ngModel)]="reviewerCredentials.mail"></ion-input>
+          <ion-input type="email" placeholder="Mail" [(ngModel)]="reviewerCredentials.mail"></ion-input>
         </ion-row>
         <ion-row>
           <ion-input type="password" placeholder="Password" [(ngModel)]="reviewerCredentials.password"></ion-input>
@@ -57,6 +79,34 @@
           </ion-col>
         </ion-row>
 
+
+        <ion-row class="social-login" justify-content-center align-items-start>
+          <ion-col col-12>
+            <p class="social-login-text">or sign in with :</p>
+
+          </ion-col>
+          <ion-col col-auto>
+            <button ion-button icon-only >
+              <ion-icon name="logo-facebook"></ion-icon>
+            </button>
+          </ion-col>
+          <ion-col col-auto>
+            <button ion-button icon-only>
+              <ion-icon name="logo-twitter"></ion-icon>
+            </button>
+          </ion-col>
+          <ion-col col-auto>
+            <button ion-button icon-only>
+              <ion-icon name="logo-google"></ion-icon>
+            </button>
+          </ion-col>
+          <ion-col col-auto>
+            <button ion-button icon-only>
+              <ion-icon name="logo-github"></ion-icon>
+            </button>
+          </ion-col>
+        </ion-row>
+
         <ion-row *ngIf="toggleLoginError">
           <div class="error-container">
             <p text-wrap class="error">there is no reviewer with thise credentials</p>
@@ -64,6 +114,7 @@
         </ion-row>
 
       </div>
+
     </ion-slide>
   </ion-slides>
 </ion-content>

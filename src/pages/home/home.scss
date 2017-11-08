@@ -94,9 +94,10 @@ page-home {
   .login {
 
     position: absolute;
-    bottom: 30%;
+    top: 31%;
     right: 0;
     width: 100%;
+
 
     ion-input {
       font-size: 1.1em;
@@ -136,7 +137,7 @@ page-home {
 
     width: 10em;
     position: absolute;
-    top: 15%;
+    top: 11%;
     left: 50%;
     margin-left: -5em;
     opacity: .8;
@@ -144,6 +145,111 @@ page-home {
     img {
     }
   }
+
+  .social-login-text {
+    font-size: 1em;
+    padding: 0 0 0 1.5em;
+    margin: 0;
+
+  }
+  .social-login {
+    margin: 1em 0 0 0;
+    padding: 0 0 .5em 0;
+
+    button {
+      width: 100%;
+      background-color: transparent;
+      border-bottom: .5em black solid;
+      font-size: 1.2em;
+    }
+  }
+
+
+
+  .ml5 {
+    position: relative;
+    font-weight: 300;
+    color: #402d2d;
+    font-size: 2.1em;
+    text-align: left;
+    padding: .2 0;
+
+    
+  }
+  
+  .ml5 .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.1em;
+    padding-bottom: 0.15em;
+    line-height: 1em;
+    padding-left: .5em;
+    padding-right: .5em;
+  }
+  
+  .ml5 .line {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: .5px;
+    width: 100%;
+    background-color: whitesmoke;
+    transform-origin: 0.5 0;
+  }
+  
+  .ml5 .ampersand {
+    font-family: Baskerville, "EB Garamond", serif;
+    font-style: italic;
+    font-weight: 400;
+    width: 1em;
+    margin-right: -0.1em;
+    margin-left: -0.1em;
+  }
+  
+  .ml5 .letters {
+    display: inline-block;
+    opacity: 0;
+    text-align: left;
+
+    &.letters-right {
+      font-size: .5em;
+      opacity: .55;
+    }
+  }
+
+  
+
+
+
+  ._body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 2em;
+  }
+
+  .wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 1px;
+    height: 1em;
+  }
+
+  .el {
+    position: absolute;
+    opacity: 1;
+    width: 1px;
+    height: 2em;
+    // margin-top: -12vh;
+    // transform-origin: 50% 100%;
+    background: white;
+  }  
+
 
 }
 
