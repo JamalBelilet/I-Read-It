@@ -4,28 +4,32 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
 
 import { SignUpPage } from '../sign-up/sign-up';
 import { TabsPage } from '../tabs/tabs';
-import {AuthenticationServiceProvider} from '../../providers/authentication-service/authentication-service';
-import * as _animate from 'animejs';
+import { AuthenticationServiceProvider } from '../../providers/authentication-service/authentication-service';
+import * as anime from 'animejs';
 
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html',
   animations: [
-    trigger('swape', [
-      state('toLeft', style({
-        transform: 'translateX(+10px)'
+    trigger('login-loading', [
+      state('shift-left', style({
+        transform: 'translateX(+10em)'
       })),
-      state('toRight', style({
-        transform: 'translateX(-10px)'
+      state('shift-right', style({
+        transform: 'translateX(-10em)'
       })),
       state('none', style({
         transform: 'translateX(0)'
       })),
-      transition('toLeft <=> toRight', animate('800ms ease-out'))
+      transition('none => shift-right', animate('800ms ease-out')),
+      transition('none => shift-left', animate('800ms ease-out'))
     ])
   ]
 })
 export class HomePage {
+
+  _loadingState: string = 'none';
+  loadingState_: string = 'none';
 
   @ViewChild(Slides) slides: Slides;
   private signUpPage;
@@ -54,9 +58,13 @@ export class HomePage {
   }
 
   login() {
+
+    this._loadingState = 'shift-left';
+    this.loadingState_ = 'shift-right';
+
     const _= this;
     this.authService.login(this.reviewerCredentials)
-      .then( _ => {
+      .then( $ => {
         this.navCtrl.setRoot(TabsPage);
         this.authService.reviewer$.subscribe( reviewer => console.log(reviewer))
       })
@@ -67,12 +75,13 @@ export class HomePage {
         setTimeout(function(){
           _.toggleLoginError = !_.toggleLoginError;
         }, 1500);
-
       })
   }
 
   ionViewDidLoad() {
 
+    this.loadingState_= this._loadingState = 'none';
+     
     
 
     // const wrapperEl = document.querySelector('.wrapper');
@@ -80,7 +89,7 @@ export class HomePage {
     // const duration = 1000;
     // const delay = duration / numberOfEls;
 
-    // let tl = _animate.timeline({
+    // let tl = anime.timeline({
     //   duration: delay,
     //   complete: function() { tl.restart(); }
     // });
@@ -96,7 +105,7 @@ export class HomePage {
     //   el.style.transform = 'rotate(' + rotate + 'deg) translateY(' + translateY + '%)';
     //   tl.add({
     //     begin: function() {
-    //       _animate({
+    //       anime({
     //         targets: el,
     //         // backgroundColor: ['hsl(' + hue + ', 40%, 60%)', 'hsl(' + hue + ', 60%, 80%)'],
     //         rotate: [rotate + 'deg', rotate + 10 +'deg'],
@@ -115,7 +124,7 @@ export class HomePage {
 
 
 
-    _animate.timeline({loop: 1, })
+    anime.timeline({loop: 1, })
     .add({
       targets: '.ml5 .line',
       opacity: [0.5,1],

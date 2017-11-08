@@ -63,14 +63,14 @@
       </div>
 
       <div class="login">
-        <ion-row>
+        <ion-row [@login-loading]="loadingState_">
           <ion-input type="email" placeholder="Mail" [(ngModel)]="reviewerCredentials.mail"></ion-input>
         </ion-row>
-        <ion-row>
+        <ion-row [@login-loading]="loadingState_">
           <ion-input type="password" placeholder="Password" [(ngModel)]="reviewerCredentials.password"></ion-input>
         </ion-row>
 
-        <ion-row>
+        <ion-row [@login-loading]="_loadingState">
           <ion-col>
             <button ion-button outline id="loginBtn" (click)="login()">Log in</button>
           </ion-col>
@@ -80,7 +80,7 @@
         </ion-row>
 
 
-        <ion-row class="social-login" justify-content-center align-items-start>
+        <ion-row  [@login-loading]="_loadingState" class="social-login" justify-content-center align-items-start>
           <ion-col col-12>
             <p class="social-login-text">or sign in with :</p>
 
